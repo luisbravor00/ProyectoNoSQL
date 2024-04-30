@@ -1,0 +1,3 @@
+Cassandra/venv/*
+Dgraph/venv/*
+MongoDB/venv/*
