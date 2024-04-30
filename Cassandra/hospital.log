@@ -1,0 +1,220 @@
+2024-04-30 12:39:10,488 [INFO] root: Connecting to Cluster
+2024-04-30 12:39:10,503 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:39:10,575 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:39:11,892 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:39:12,626 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:39:12,626 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:39:13,556 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:39:13,725 [INFO] root: Creating model schema
+2024-04-30 12:40:58,518 [INFO] root: Connecting to Cluster
+2024-04-30 12:40:58,528 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:40:58,571 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:41:00,024 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:41:00,423 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:41:00,424 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:41:00,638 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:41:00,757 [INFO] root: Creating model schema
+2024-04-30 12:42:05,389 [INFO] root: Connecting to Cluster
+2024-04-30 12:42:05,404 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:42:05,440 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:42:06,928 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:42:08,523 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:42:08,523 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:42:09,819 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:42:09,933 [INFO] root: Creating model schema
+2024-04-30 12:43:08,635 [INFO] root: Connecting to Cluster
+2024-04-30 12:43:08,645 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:43:08,697 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:43:09,547 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:43:10,106 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:43:10,106 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:43:10,333 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:43:10,365 [INFO] root: Creating model schema
+2024-04-30 12:43:20,614 [INFO] root: Connecting to Cluster
+2024-04-30 12:43:20,630 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:43:20,688 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:43:21,197 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:43:21,773 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:43:21,773 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 12:43:22,377 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:43:22,494 [INFO] root: Creating model schema
+2024-04-30 12:44:27,547 [INFO] root: Connecting to Cluster
+2024-04-30 12:44:27,557 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:44:27,589 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:44:28,959 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:44:30,560 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:44:30,560 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 12:44:32,001 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:44:32,124 [INFO] root: Creating model schema
+2024-04-30 12:44:57,331 [INFO] root: Connecting to Cluster
+2024-04-30 12:44:57,356 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:44:57,397 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:44:58,281 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:44:58,971 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:44:58,972 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:44:59,911 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:45:00,020 [INFO] root: Creating model schema
+2024-04-30 12:45:03,835 [INFO] root: Username set to admin
+2024-04-30 12:45:20,834 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 12:45:20,855 [ERROR] cassandra.cluster: Error preparing query:
+Traceback (most recent call last):
+  File "cassandra\cluster.py", line 3128, in cassandra.cluster.Session.prepare
+  File "cassandra\cluster.py", line 4956, in cassandra.cluster.ResponseFuture.result
+cassandra.protocol.SyntaxException: <Error from server: code=2000 [Syntax error in CQL query] message="line 3:4 mismatched input 'TRUNCATE' expecting EOF (    TRUNCATE hospital;    [TRUNCATE]...)">
+2024-04-30 12:47:35,150 [INFO] root: Connecting to Cluster
+2024-04-30 12:47:35,151 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:47:35,203 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:47:36,792 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:47:38,121 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:47:38,121 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:47:38,458 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:47:38,491 [INFO] root: Creating model schema
+2024-04-30 12:47:40,567 [INFO] root: Username set to admin
+2024-04-30 12:47:43,350 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 12:47:43,369 [ERROR] cassandra.cluster: Error preparing query:
+Traceback (most recent call last):
+  File "cassandra\cluster.py", line 3128, in cassandra.cluster.Session.prepare
+  File "cassandra\cluster.py", line 4956, in cassandra.cluster.ResponseFuture.result
+cassandra.protocol.SyntaxException: <Error from server: code=2000 [Syntax error in CQL query] message="line 3:4 mismatched input 'TRUNCATE' expecting EOF (    TRUNCATE hospital.hospital;    [TRUNCATE]...)">
+2024-04-30 12:47:55,210 [INFO] root: Connecting to Cluster
+2024-04-30 12:47:55,220 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:47:55,255 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:47:56,800 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:47:58,434 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:47:58,435 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:47:59,821 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:47:59,864 [INFO] root: Creating model schema
+2024-04-30 12:48:04,045 [INFO] root: Username set to asdf
+2024-04-30 12:48:06,111 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 12:50:31,374 [INFO] root: Connecting to Cluster
+2024-04-30 12:50:31,374 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:50:31,421 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:50:33,016 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:50:34,569 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:50:34,569 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 12:50:35,167 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:50:35,197 [INFO] root: Creating model schema
+2024-04-30 12:50:38,244 [INFO] root: Username set to admin
+2024-04-30 12:50:41,149 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 12:51:38,962 [INFO] root: Connecting to Cluster
+2024-04-30 12:51:38,980 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:51:39,013 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:51:40,031 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:51:41,116 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:51:41,117 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 12:51:42,196 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:51:42,231 [INFO] root: Creating model schema
+2024-04-30 12:52:03,312 [INFO] root: Connecting to Cluster
+2024-04-30 12:52:03,312 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:52:03,345 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:52:04,414 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:52:05,395 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:52:05,395 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 12:52:06,312 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:52:06,345 [INFO] root: Creating model schema
+2024-04-30 12:52:08,408 [INFO] root: Username set to admin
+2024-04-30 12:52:12,911 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 12:52:37,227 [INFO] root: Connecting to Cluster
+2024-04-30 12:52:37,250 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 12:52:37,278 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:52:38,296 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 12:52:39,297 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 12:52:39,297 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 12:52:40,081 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 12:52:40,112 [INFO] root: Creating model schema
+2024-04-30 12:52:41,611 [INFO] root: Username set to admin
+2024-04-30 12:52:43,767 [INFO] root: Deleting all the information from every table on the database.
+2024-04-30 13:01:13,256 [INFO] root: Connecting to Cluster
+2024-04-30 13:01:13,271 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:01:13,307 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:01:14,611 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:01:15,493 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:01:15,493 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:01:16,403 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:01:16,438 [INFO] root: Creating model schema
+2024-04-30 13:01:39,529 [INFO] root: Connecting to Cluster
+2024-04-30 13:01:39,529 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:01:39,579 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:01:41,064 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:01:42,706 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:01:42,706 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:01:44,182 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:01:44,242 [INFO] root: Creating model schema
+2024-04-30 13:02:18,916 [INFO] root: Connecting to Cluster
+2024-04-30 13:02:18,925 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:02:18,955 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:02:20,410 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:02:21,613 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:02:21,614 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:02:22,906 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:02:22,937 [INFO] root: Creating model schema
+2024-04-30 13:02:32,975 [INFO] root: Connecting to Cluster
+2024-04-30 13:02:32,985 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:02:33,048 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:02:34,586 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:02:36,251 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:02:36,251 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 13:02:37,700 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:02:37,738 [INFO] root: Creating model schema
+2024-04-30 13:03:01,732 [INFO] root: Connecting to Cluster
+2024-04-30 13:03:01,748 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:03:01,802 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:03:03,347 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:03:04,988 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:03:04,988 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 13:03:06,438 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:03:06,476 [INFO] root: Creating model schema
+2024-04-30 13:03:46,447 [INFO] root: Connecting to Cluster
+2024-04-30 13:03:46,458 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:03:46,526 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:03:48,073 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:03:49,707 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:03:49,707 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 13:03:51,126 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:03:51,157 [INFO] root: Creating model schema
+2024-04-30 13:04:09,190 [INFO] root: Connecting to Cluster
+2024-04-30 13:04:09,209 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:04:09,237 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:04:10,815 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:04:12,451 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:04:12,451 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 13:04:13,848 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:04:13,879 [INFO] root: Creating model schema
+2024-04-30 13:04:39,394 [INFO] root: Connecting to Cluster
+2024-04-30 13:04:39,410 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:04:39,446 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:04:40,827 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:04:42,445 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:04:42,445 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:04:43,905 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:04:43,949 [INFO] root: Creating model schema
+2024-04-30 13:28:53,039 [INFO] root: Connecting to Cluster
+2024-04-30 13:28:53,039 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:28:53,095 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:28:54,670 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:28:56,384 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:28:56,384 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-04-30 13:28:57,876 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:28:57,988 [INFO] root: Creating model schema
+2024-04-30 13:31:06,225 [INFO] root: Connecting to Cluster
+2024-04-30 13:31:06,245 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:31:06,282 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:31:06,735 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:31:07,370 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:31:07,370 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:31:08,288 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:31:08,319 [INFO] root: Creating model schema
+2024-04-30 13:32:05,339 [INFO] root: Connecting to Cluster
+2024-04-30 13:32:05,354 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-04-30 13:32:05,425 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:32:06,942 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-30 13:32:08,605 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-30 13:32:08,606 [INFO] cassandra.cluster: Cassandra host ::1:9042 removed
+2024-04-30 13:32:10,046 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-04-30 13:32:10,089 [INFO] root: Creating model schema
+2024-04-30 13:32:34,735 [INFO] root: Retrieving information of patient Carolina Lopez born on 1983-11-01
+2024-04-30 13:32:34,758 [ERROR] cassandra.cluster: Error preparing query:
+Traceback (most recent call last):
+  File "cassandra\cluster.py", line 3128, in cassandra.cluster.Session.prepare
+  File "cassandra\cluster.py", line 4956, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"
