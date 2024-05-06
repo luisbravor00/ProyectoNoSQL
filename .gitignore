@@ -1,3 +1,4 @@
 Cassandra/venv/*
+Cassandra/tools/*
 Dgraph/venv/*
 MongoDB/venv/*
