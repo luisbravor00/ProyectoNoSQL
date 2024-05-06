@@ -12,14 +12,12 @@ handler.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(
 log.addHandler(handler)
 
 # Read env vars related to API connection
-BOOKS_API_URL = os.getenv("BOOKS_API_URL", "http://localhost:8000")
+app_url = os.getenv("app_url", "http://localhost:8000")
 
 def main():
-    log.info(f"Welcome to books catalog. App requests to: {BOOKS_API_URL}")
+    log.info(f"Welcome to books catalog. App requests to: {app_url}")
 
     parser = argparse.ArgumentParser()
-
-
 
 if __name__ == "__main__":
     main()

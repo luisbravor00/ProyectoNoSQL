@@ -10,6 +10,7 @@ class Store(BaseModel):
     openingHours: str = Field(...)
     country: str = Field(...)
     products: list = Field(...)    
+    
     class Config:
         allow_population_by_field_name = True
         schema_extra = {
@@ -23,6 +24,7 @@ class Store(BaseModel):
                 
             }
         }
+        
 class Airport(BaseModel):
     id: str = Field(default_factory=uuid.uuid4, alias="_id")
     airportCode: str = Field(...)
@@ -48,5 +50,7 @@ class Client(BaseModel):
     name: str = Field(...)
     gender: str = Field(...)
     age: int = Field(...)
-    airport: list[Airport] = Field(...)
+    departureAirport: Airport = Field(...)
+    waitTime: int = Field(...)
+    destinyAirport: Airport = Field(...)
     travelReason: str = Field(...)    
