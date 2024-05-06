@@ -36,9 +36,10 @@ def print_menu():
     mm_options = {
         1: "Consult Information",
         2: "Modify Information",
-        3: "Delete Information",
-        4: "Delete General Data",
-        5: "Exit"
+        3: "Create Information",
+        4: "Delete Information",
+        5: "Delete General Data",
+        6: "Exit"
     }
     print(f"\n\n\033[1;35;40m███████████████████████ MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
@@ -52,7 +53,7 @@ def print_consult_menu():
         4: "Get Patient Appointments",
         5: "View All Doctors of a Hospital",
         6: "View Appointments for a Specific Day",
-        7: "Exit Submenu"
+        7: "Exit Consult Menu"
     }
     print(f"\n\n\033[1;32;40m███████████████████████ CONSULT MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
@@ -60,13 +61,22 @@ def print_consult_menu():
 
 def print_modify_menu():
     mm_options = {
-        1: "Change Patient Information",
-        2: "Cancel Appointment",
-        3: "Reschedule Appointment (status & date)",
-        4: "Change Appointment Hour",
-        5: "Exit Submenu"
+        1: "Cancel Appointment",
+        2: "Reschedule Appointment (hour & date)",
+        3: "Change Appointment Hour",
+        4: "Exit Modify Menu"
     }
     print(f"\n\n\033[1;32;40m███████████████████████ MODIFY MENU ███████████████████████\033[0m")
+    for key in mm_options.keys():
+        print(f"\033[1;33;40m{key}\033[0m -- {mm_options[key]}")
+
+def print_create_menu():
+    mm_options = {
+        1: "Create Appointments for Patients",
+        2: "Create Patients",
+        3: "Exit Create Menu"
+    }
+    print(f"\n\n\033[1;32;40m███████████████████████ CREATE MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
         print(f"\033[1;33;40m{key}\033[0m -- {mm_options[key]}")
 
@@ -74,8 +84,7 @@ def print_delete_menu():
     mm_options = {
         1: "Delete Appointment",
         2: "Delete Patient",
-        3: "Delete Doctor",
-        4: "Exit Submenu"
+        3: "Exit Delete Menu"
     }
     print(f"\n\n\033[1;32;40m███████████████████████ DELETE MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
@@ -143,20 +152,79 @@ def main():
             print_modify_menu()
             option2 = int(input("Enter your choice: "))
 
+            if option2 == 1:
+                # Cancel an appointment
+                appointment_id = input("Enter the appointment ID you want to CANCEL: ")
+                model.cancel_appointment(session, appointment_id)
+
+            if option2 == 2:
+                # Reschedule the appointment
+                pass
+
+            if option2 == 3:
+                # Change the hour of the appointment
+                pass
 
         if option == 3:
+            print_create_menu()
+            option2 = int(input("Enter your choice: "))
+
+            if option2 == 1:
+                # Create appointments for patients
+                doctor_id = input("Your doctor ID: ")
+                patient_id = input("Your patient ID: ")
+                start = input("Start Hour (HH:MM): ")
+                hour, minute = map(int, start.split(':'))
+                # Incrementa la hora en 1 y ajusta si excede 20:59
+                # Formatea la hora final
+                end = f"{hour+1:02d}:00"
+                date = input("Date (yyyy-mm-dd): ")
+                status = "Scheduled"
+                hospital_id = input("Your hospital ID: ")
+                model.create_appointments_for_users(session, doctor_id, patient_id, start, end, date, status, hospital_id)
+
+
+            if option2 == 2:
+                # Create patients
+                last_name = input("Last Name: ")
+                first_name = input("First Name: ")
+                birth_date = input("Birth Date (yyyy-mm-dd): ")
+                address = input("Patient Address: ")
+                nss = input("Patient NSS: ")
+                hospital_id = input("Patient Hospital ID: ")
+                model.create_new_patients(session, first_name, last_name, birth_date, address, nss, hospital_id)
+
+            if option2 == 3:
+                pass
+
+        if option == 4:
             print_delete_menu()
             option2 = int(input("Enter your choice: "))
 
+            if option2 == 1:
+                # Delete appointment for user
+                appointment_id = input("Enter the appointment ID you want to delete: ")
+                date = input("Enter the date of the appointment: ")
+                model.delete_appointments(session, appointment_id, date)
+
+            if option2 == 2:
+                # Delete user from database
+                last_name = input("Last Name: ")
+                first_name = input("First Name: ")
+                birth_date = input("Date of birth (yyyy-mm-dd): ")
+                model.delete_patient(session, last_name, first_name, birth_date)
+            
+            if option2 == 3:
+                pass
         
-        if option == 4:
+        if option == 5:
             print("\n\033[1;31;40mAre you sure you really want to delete all the information from the database?\033[0m")
             answer = input("Your answer ('y' for yes or anything else for no): ")
             if answer == 'y':
                 print("Deleting all the information from the database...")
                 model.delete_all_information(session)
 
-        if option == 5:
+        if option == 6:
             exit(0)
 
 if __name__ == '__main__':

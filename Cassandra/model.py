@@ -80,6 +80,19 @@ CREATE_APPOINTMENT_TABLE = """
         PRIMARY KEY (patient_id, status, date, start_hour, hospital_id)
     ) WITH CLUSTERING ORDER BY (status ASC, date DESC, start_hour DESC)
 """
+CREATE_APPOINTMENT_TABLE_BY_ID = """
+    CREATE TABLE IF NOT EXISTS appointment_by_id (
+        appointment_id UUID,
+        doctor_id UUID,
+        patient_id UUID,
+        hospital_id UUID,
+        start_hour TEXT,
+        end_hour TEXT,
+        date DATE,
+        status TEXT,
+        PRIMARY KEY (appointment_id, status, date, start_hour, hospital_id)
+    ) WITH CLUSTERING ORDER BY (status ASC, date DESC, start_hour DESC)
+"""
 CREATE_APPOINTMENT_TABLE_BY_DATE = """
     CREATE TABLE IF NOT EXISTS appointment_by_date (
         appointment_id UUID,
@@ -90,8 +103,8 @@ CREATE_APPOINTMENT_TABLE_BY_DATE = """
         end_hour TEXT,
         date DATE,
         status TEXT,
-        PRIMARY KEY (date, status, start_hour)
-    ) WITH CLUSTERING ORDER BY (status ASC, start_hour DESC)
+        PRIMARY KEY (date, appointment_id, status, start_hour)
+    ) WITH CLUSTERING ORDER BY (appointment_id DESC, status ASC, start_hour ASC)
 """
 
 # QUERIES
@@ -132,17 +145,51 @@ SELECT_APPOINTMENTS_FOR_A_DAY = """
     WHERE date = ?
 """
 
+# Create Information
+CREATE_APPOINTMENT_FOR_PATIENT_1 = """
+    INSERT INTO appointment (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES(?, ?, ?, ?, ?, ?, ?, ?);
+"""
+CREATE_APPOINTMENT_FOR_PATIENT_2 = """
+    INSERT INTO appointment_by_id (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES(?, ?, ?, ?, ?, ?, ?, ?);
+"""
+CREATE_APPOINTMENT_FOR_PATIENT_3 = """
+    INSERT INTO appointment_by_date (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES(?, ?, ?, ?, ?, ?, ?, ?);
+"""
+CREATE_PATIENTS = """
+    INSERT INTO patient (patient_id, first_name, last_name, date_of_birth, address, NSS, hospital_id) VALUES (?, ?, ?, ?, ?, ?, ?);
+"""
 
-DELETE_APPOINTMENT = """
-    TRUNCATE hospital.appointment;
+# Modify Information
+CANCEL_APPOINTMENT = """
+    UPDATE appointment SET status = 'Cancelled' WHERE appointment_id = ?;
 """
-DELETE_HOSPITAL = """
-    TRUNCATE hospital.hospital;
+RESCHEDULE_APPOINTMENT = """
+    UPDATE appointment SET date = ? AND hour = ? WHERE appointment_id = ?;
 """
-DELETE_DOCTOR = """
-    TRUNCATE hospital.doctor;
+CHANGE_APPOINTMENT_HOUR = """
+    UPDATE appointment SET hour = ? WHERE appointment_id = ?;
+"""
+
+
+# Delete Specific Information
+DELETE_APPOINTMENT_FOR_USER = """
+    DELETE FROM appointment_by_date WHERE date = ? AND appointment_id = ?;
 """
 DELETE_PATIENT = """
+    DELETE FROM patient WHERE last_name = ? AND first_name = ? AND date_of_birth = ?;
+"""
+
+# Delete All Information
+DELETE_APPOINTMENT_TABLE = """
+    TRUNCATE hospital.appointment;
+"""
+DELETE_HOSPITAL_TABLE = """
+    TRUNCATE hospital.hospital;
+"""
+DELETE_DOCTOR_TABLE = """
+    TRUNCATE hospital.doctor;
+"""
+DELETE_PATIENT_TABLE = """
     TRUNCATE hospital.patient;
 """
 
@@ -158,6 +205,7 @@ def create_schema(session):
     session.execute(CREATE_DOCTOR_TABLE_BY_ID)
     session.execute(CREATE_DOCTOR_TABLE_BY_HOSPITAL_ID)
     session.execute(CREATE_APPOINTMENT_TABLE)
+    session.execute(CREATE_APPOINTMENT_TABLE_BY_ID)
     session.execute(CREATE_APPOINTMENT_TABLE_BY_DATE)
 
 def get_all_hospitals(session):
@@ -237,16 +285,59 @@ def get_appointments_for_a_day(session, date):
             rows2 = session.execute(stmt2, [row.doctor_id])
             stmt3 = session.prepare(SELECT_HOSPITAL_INFORMATION)
             rows3 = session.execute(stmt3, [row.hospital_id])
-            print(f"{str(row.appointment_id):40}{row.status:14}{str(row.date):12}{row.start_hour:12}{rows2[0].last_name+' '+rows2[0].first_name+' ('+rows2[0].speciality+')':50}{rows3[0].hospital_name:30}")
+            print(f"{str(row.appointment_id):40}{row.status:14}{str(row.date):12}{row.start_hour:12}{rows2[0].last_name+' '+rows2[0].first_name+' ('+rows2[0].speciality+')':50}{rows3[0].hospital_name+' ('+rows3[0].location+')':30}")
     else:
         print(f"\nThere are no appointments for {date}")
+
+def create_appointments_for_users(session, doctor_id, patient_id, start, end, date, status, hospital_id):
+    log.info(f"Creating appointment for user with ID equal to {patient_id}")
+    stmt = session.prepare(CREATE_APPOINTMENT_FOR_PATIENT_1)
+    session.execute(stmt, [uuid.uuid4(), uuid.UUID(doctor_id), uuid.UUID(patient_id), start, end, date, status, uuid.UUID(hospital_id)])
+    stmt = session.prepare(CREATE_APPOINTMENT_FOR_PATIENT_2)
+    session.execute(stmt, [uuid.uuid4(), uuid.UUID(doctor_id), uuid.UUID(patient_id), start, end, date, status, uuid.UUID(hospital_id)])
+    stmt = session.prepare(CREATE_APPOINTMENT_FOR_PATIENT_3)
+    session.execute(stmt, [uuid.uuid4(), uuid.UUID(doctor_id), uuid.UUID(patient_id), start, end, date, status, uuid.UUID(hospital_id)])
+    print(f"\nYour appointment has been created succesfuly!")
+
+def create_new_patients(session, first_name, last_name, birth_date, address, nss, hospital_id):
+    log.info(f"Creating a new user")
+    stmt = session.prepare(CREATE_PATIENTS)
+    session.execute(stmt, [uuid.uuid4(), first_name, last_name, birth_date, address, nss, uuid.UUID(hospital_id)])
+    print(f"\nYour user has been created succesfuly!")
+
+def cancel_appointment(session, appointment_id):
+    log.info(f"Cancel the appointment with ID equal to: {appointment_id}")
+    stmt = session.prepare(CANCEL_APPOINTMENT)
+    session.execute(stmt, [uuid.UUID(appointment_id)])
+    print(f"\nYour appointment has been CANCELED.")
+
+def reschedule_appointment(session, appointment_id, hour, date):
+    log.info(f"Rescheduling the appointment with ID equal to {appointment_id} with new hour {hour} and date {date}")
+    stmt = session.prepare()
+    session.execute()
     
+def change_appointment_hour(session, appointment_id, hour):
+    log.info(f"Changing the appointment with ID equal to {appointment_id} with new hour {hour}")
+    stmt = session.prepare()
+    session.execute()
+
+def delete_appointments(session, appointment_id, date):
+    log.info(f"Deleting the appointment with ID equal to: {appointment_id} on {date}")
+    stmt = session.prepare(DELETE_APPOINTMENT_FOR_USER)
+    session.execute(stmt, [date, uuid.UUID(appointment_id)])
+    print(f"\nYour appointment has been deleted succesfuly!")
+
+def delete_patient(session, last, first, birth):
+    log.info(f"Deleting the patient named {last + ' ' + first} born on {birth}")
+    stmt = session.prepare(DELETE_PATIENT)
+    session.execute(stmt, [last, first, birth])
+    print(f"\nYour patient has been deleted succesfuly!")
 
 def delete_all_information(session):
     log.info(f"Deleting all the information from every table on the database.")
-    session.execute(DELETE_DOCTOR)
-    session.execute(DELETE_HOSPITAL)
-    session.execute(DELETE_PATIENT)
-    session.execute(DELETE_APPOINTMENT)
+    session.execute(DELETE_DOCTOR_TABLE)
+    session.execute(DELETE_HOSPITAL_TABLE)
+    session.execute(DELETE_PATIENT_TABLE)
+    session.execute(DELETE_APPOINTMENT_TABLE)
     print("\033[1;31;40mAll data has been deleted succesfully!\n\033[0m")
             
