@@ -27,7 +27,7 @@ def close_client_stub(client_stub):
 def main():
     # Init Client Stub and Dgraph Client
     client_stub = create_client_stub()
-    client = create_client(client_stub)
+    client = create_client(client_stub
 
     # Create schema
     model.set_schema(client)

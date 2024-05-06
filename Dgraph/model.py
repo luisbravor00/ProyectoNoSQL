@@ -118,6 +118,7 @@ def load_data(client):
         txn.discard()
 
 ###define querys later
+##hi
 
 
 
