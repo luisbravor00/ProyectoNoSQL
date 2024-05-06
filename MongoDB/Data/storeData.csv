@@ -1,0 +1,151 @@
+store_name,products,store_type,opening_hours,country
+Boysenberry Market,"[""Lemon Verbena Hand Sanitizer"",""Rose Petal Bath Bombs"",""Ocean Breeze Body Wash"",""Citrus Splash Body Scrub"",""Sunset Serenade Lip Balm""]",fast food,7:00 AM to 8:00 PM,AR
+Moonlight Market,"[""Tropical Paradise Candle"",""Cozy Cabin Blanket"",""Honeysuckle Room Diffuser"",""Jasmine Tea Bath Tea"",""Ocean Breeze Body Wash""]",snacks,24 hrs,PH
+Boysenberry Market,"[""Pumpkin Spice Hand Soap"",""Winter Wonderland Candle"",""Cotton Candy Lip Scrub"",""Sandalwood Shaving Cream"",""Ocean Breeze Body Wash""]",snacks,7:00 AM to 11:00 PM,US
+Honey Haven Shop,"[""Tropical Paradise Candle"",""Ocean Breeze Body Wash"",""Mint Mojito Body Butter"",""Pumpkin Spice Hand Soap"",""Cotton Candy Lip Scrub""]",clothes,5:00 AM to 12:00 PM,PL
+Ruby Red Retail,"[""Rose Petal Bath Bombs"",""Cherry Blossom Perfume"",""Ocean Breeze Body Wash"",""Cotton Candy Lip Scrub"",""Enchanted Forest Room Spray""]",fast food,6:00 AM to 8:00 PM,ID
+Midnight Market,"[""Lavender Fields Pillow Mist"",""Jasmine Tea Bath Tea"",""Peach Paradise Body Oil"",""Cotton Candy Lip Scrub"",""Enchanted Forest Room Spray""]",boutique,24 hrs,ID
+Starfruit Store,"[""Pumpkin Spice Hand Soap"",""Jasmine Tea Bath Tea"",""Ocean Breeze Body Wash"",""Mountain Retreat Bath Salts"",""Cucumber Melon Body Mist""]",fast food,7:00 AM to 8:00 PM,PT
+Sunshine Mart,"[""Rose Petal Bath Bombs"",""Winter Wonderland Candle"",""Mint Mojito Body Butter"",""Lavender Fields Pillow Mist"",""Citrus Splash Body Scrub""]",restaurant,9:00 AM to 9:00 PM,CN
+Azure Skies Store,"[""Pumpkin Spice Hand Soap"",""Sandalwood Shaving Cream"",""Cucumber Melon Body Mist"",""Amber Sunset Cologne"",""Peach Paradise Body Oil""]",boutique,5:00 AM to 12:00 PM,PA
+Cherry Blossom Boutique,"[""Cucumber Melon Body Mist"",""Honeysuckle Room Diffuser"",""Cozy Cabin Blanket"",""Citrus Splash Body Scrub"",""Enchanted Forest Room Spray""]",snacks,7:00 AM to 8:00 PM,BR
+Pine Grove General Store,"[""Berry Blast Lip Gloss"",""Pumpkin Spice Hand Soap"",""Cozy Cabin Blanket"",""Cucumber Melon Body Mist"",""Sandalwood Shaving Cream""]",boutique,24 hrs,IR
+Mulberry Mart,"[""Tropical Paradise Candle"",""Ocean Breeze Body Wash"",""Cotton Candy Lip Scrub"",""Peach Paradise Body Oil"",""Berry Blast Lip Gloss""]",clothes,6:00 AM to 8:00 PM,VN
+Aronia Alley Trading Post,"[""Amber Sunset Cologne"",""Cotton Candy Lip Scrub"",""Enchanted Forest Room Spray"",""Cozy Cabin Blanket"",""Winter Wonderland Candle""]",fast food,7:00 AM to 11:00 PM,PH
+Steel City Store,"[""Peach Paradise Body Oil"",""Sunset Serenade Lip Balm"",""Sandalwood Shaving Cream"",""Vanilla Bean Body Lotion"",""Golden Harvest Hand Cream""]",restaurant,7:00 AM to 11:00 PM,MN
+Azure Skies Store,"[""Golden Harvest Hand Cream"",""Cherry Blossom Perfume"",""Midnight Moonlight Perfume"",""Sandalwood Shaving Cream"",""Mint Mojito Body Butter""]",clothes,7:00 AM to 11:00 PM,PK
+Golden Gate General Store,"[""Honeysuckle Room Diffuser"",""Amber Sunset Cologne"",""Rose Petal Bath Bombs"",""Midnight Moonlight Perfume"",""Ocean Breeze Body Wash""]",snacks,7:00 AM to 8:00 PM,TH
+Aronia Alley Trading Post,"[""Peach Paradise Body Oil"",""Berry Blast Lip Gloss"",""Pumpkin Spice Hand Soap"",""Cherry Blossom Perfume"",""Ocean Breeze Body Wash""]",boutique,7:00 AM to 8:00 PM,NG
+Gingerbread General Store,"[""Peach Paradise Body Oil"",""Sandalwood Shaving Cream"",""Golden Harvest Hand Cream"",""Ocean Breeze Body Wash"",""Midnight Moonlight Perfume""]",restaurant,7:00 AM to 11:00 PM,AM
+Whispering Pines Store,"[""Sandalwood Shaving Cream"",""Golden Harvest Hand Cream"",""Winter Wonderland Candle"",""Enchanted Forest Room Spray"",""Sunset Serenade Lip Balm""]",snacks,5:00 AM to 12:00 PM,CN
+Turquoise Trail Trading Co.,"[""Mountain Retreat Bath Salts"",""Winter Wonderland Candle"",""Pumpkin Spice Hand Soap"",""Sandalwood Shaving Cream"",""Midnight Moonlight Perfume""]",clothes,9:00 AM to 9:00 PM,UG
+Pumpkin Patch Plaza,"[""Golden Harvest Hand Cream"",""Peach Paradise Body Oil"",""Rose Petal Bath Bombs"",""Mountain Retreat Bath Salts"",""Cotton Candy Lip Scrub""]",restaurant,6:00 AM to 8:00 PM,NG
+Marshmallow Mart,"[""Mountain Retreat Bath Salts"",""Vanilla Bean Body Lotion"",""Tropical Paradise Candle"",""Enchanted Forest Room Spray"",""Cherry Blossom Perfume""]",restaurant,24 hrs,HR
+Gooseberry Goods,"[""Cherry Blossom Perfume"",""Mint Mojito Body Butter"",""Lemon Verbena Hand Sanitizer"",""Winter Wonderland Candle"",""Tropical Paradise Candle""]",boutique,6:00 AM to 8:00 PM,NG
+Mountain Peak Mercantile,"[""Honeysuckle Room Diffuser"",""Vanilla Bean Body Lotion"",""Golden Harvest Hand Cream"",""Cozy Cabin Blanket"",""Cucumber Melon Body Mist""]",boutique,6:00 AM to 8:00 PM,FR
+Vanilla Valley Variety Store,"[""Citrus Splash Body Scrub"",""Rose Petal Bath Bombs"",""Pumpkin Spice Hand Soap"",""Ocean Breeze Body Wash"",""Cucumber Melon Body Mist""]",restaurant,24 hrs,UA
+Indigo Isle Emporium,"[""Lavender Fields Pillow Mist"",""Sandalwood Shaving Cream"",""Sunset Serenade Lip Balm"",""Jasmine Tea Bath Tea"",""Berry Blast Lip Gloss""]",restaurant,5:00 AM to 12:00 PM,PE
+Honey Haven Shop,"[""Cozy Cabin Blanket"",""Cucumber Melon Body Mist"",""Mint Mojito Body Butter"",""Golden Harvest Hand Cream"",""Sandalwood Shaving Cream""]",snacks,7:00 AM to 8:00 PM,SD
+Whispering Pines Store,"[""Cotton Candy Lip Scrub"",""Peach Paradise Body Oil"",""Winter Wonderland Candle"",""Lemon Verbena Hand Sanitizer"",""Berry Blast Lip Gloss""]",snacks,7:00 AM to 11:00 PM,ID
+Periwinkle Plaza,"[""Ocean Breeze Body Wash"",""Tropical Paradise Candle"",""Midnight Moonlight Perfume"",""Lavender Fields Pillow Mist"",""Enchanted Forest Room Spray""]",clothes,7:00 AM to 8:00 PM,PH
+Blueberry Bliss Boutique,"[""Citrus Splash Body Scrub"",""Sandalwood Shaving Cream"",""Mountain Retreat Bath Salts"",""Winter Wonderland Candle"",""Ocean Breeze Body Wash""]",restaurant,24 hrs,RU
+Ivory Tower Trading Co.,"[""Enchanted Forest Room Spray"",""Pumpkin Spice Hand Soap"",""Tropical Paradise Candle"",""Sandalwood Shaving Cream"",""Rose Petal Bath Bombs""]",clothes,7:00 AM to 11:00 PM,RU
+Lemon Lime Lane Market,"[""Enchanted Forest Room Spray"",""Berry Blast Lip Gloss"",""Lemon Verbena Hand Sanitizer"",""Cozy Cabin Blanket"",""Vanilla Bean Body Lotion""]",snacks,24 hrs,CN
+Banana Bay Market,"[""Lavender Fields Pillow Mist"",""Midnight Moonlight Perfume"",""Lemon Verbena Hand Sanitizer"",""Sandalwood Shaving Cream"",""Cucumber Melon Body Mist""]",boutique,5:00 AM to 12:00 PM,AR
+Rainbow Emporium,"[""Cucumber Melon Body Mist"",""Lemon Verbena Hand Sanitizer"",""Cherry Blossom Perfume"",""Winter Wonderland Candle"",""Cozy Cabin Blanket""]",restaurant,7:00 AM to 8:00 PM,FR
+Gingerbread General Store,"[""Sandalwood Shaving Cream"",""Jasmine Tea Bath Tea"",""Peach Paradise Body Oil"",""Midnight Moonlight Perfume"",""Ocean Breeze Body Wash""]",fast food,24 hrs,CN
+Blackberry Boutique,"[""Rose Petal Bath Bombs"",""Lavender Fields Pillow Mist"",""Peach Paradise Body Oil"",""Pumpkin Spice Hand Soap"",""Winter Wonderland Candle""]",boutique,9:00 AM to 9:00 PM,JP
+Maple Grove Market,"[""Honeysuckle Room Diffuser"",""Mountain Retreat Bath Salts"",""Tropical Paradise Candle"",""Sunset Serenade Lip Balm"",""Midnight Moonlight Perfume""]",restaurant,7:00 AM to 11:00 PM,HR
+Desert Oasis Outfitters,"[""Tropical Paradise Candle"",""Vanilla Bean Body Lotion"",""Cherry Blossom Perfume"",""Sandalwood Shaving Cream"",""Pumpkin Spice Hand Soap""]",restaurant,6:00 AM to 8:00 PM,ID
+Midnight Market,"[""Mint Mojito Body Butter"",""Winter Wonderland Candle"",""Lavender Fields Pillow Mist"",""Midnight Moonlight Perfume"",""Jasmine Tea Bath Tea""]",snacks,6:00 AM to 8:00 PM,UG
+Coral Cove Corner Store,"[""Golden Harvest Hand Cream"",""Ocean Breeze Body Wash"",""Sunset Serenade Lip Balm"",""Sandalwood Shaving Cream"",""Midnight Moonlight Perfume""]",fast food,9:00 AM to 9:00 PM,KP
+Ivory Tower Trading Co.,"[""Winter Wonderland Candle"",""Jasmine Tea Bath Tea"",""Cucumber Melon Body Mist"",""Enchanted Forest Room Spray"",""Lavender Fields Pillow Mist""]",boutique,6:00 AM to 8:00 PM,FR
+Ocean Breeze Boutique,"[""Cucumber Melon Body Mist"",""Honeysuckle Room Diffuser"",""Cozy Cabin Blanket"",""Enchanted Forest Room Spray"",""Jasmine Tea Bath Tea""]",clothes,7:00 AM to 8:00 PM,PL
+Toffee Treats Trading Post,"[""Mint Mojito Body Butter"",""Cucumber Melon Body Mist"",""Lemon Verbena Hand Sanitizer"",""Winter Wonderland Candle"",""Peach Paradise Body Oil""]",fast food,24 hrs,CU
+Sapphire Shores Shop,"[""Lavender Fields Pillow Mist"",""Midnight Moonlight Perfume"",""Sunset Serenade Lip Balm"",""Mint Mojito Body Butter"",""Cozy Cabin Blanket""]",snacks,5:00 AM to 12:00 PM,SE
+City Lights Corner Store,"[""Berry Blast Lip Gloss"",""Sunset Serenade Lip Balm"",""Cherry Blossom Perfume"",""Vanilla Bean Body Lotion"",""Ocean Breeze Body Wash""]",boutique,5:00 AM to 12:00 PM,CN
+Berry Blast Boutique,"[""Midnight Moonlight Perfume"",""Peach Paradise Body Oil"",""Cozy Cabin Blanket"",""Tropical Paradise Candle"",""Jasmine Tea Bath Tea""]",fast food,7:00 AM to 8:00 PM,CL
+Barberry Boutique,"[""Sunset Serenade Lip Balm"",""Winter Wonderland Candle"",""Cotton Candy Lip Scrub"",""Midnight Moonlight Perfume"",""Mint Mojito Body Butter""]",clothes,5:00 AM to 12:00 PM,PH
+Crimson Corner Store,"[""Peach Paradise Body Oil"",""Winter Wonderland Candle"",""Lavender Fields Pillow Mist"",""Mountain Retreat Bath Salts"",""Tropical Paradise Candle""]",boutique,24 hrs,ID
+Watermelon Way Store,"[""Enchanted Forest Room Spray"",""Honeysuckle Room Diffuser"",""Sandalwood Shaving Cream"",""Mint Mojito Body Butter"",""Pumpkin Spice Hand Soap""]",boutique,5:00 AM to 12:00 PM,ID
+Azure Skies Store,"[""Mountain Retreat Bath Salts"",""Jasmine Tea Bath Tea"",""Mint Mojito Body Butter"",""Lemon Verbena Hand Sanitizer"",""Sunset Serenade Lip Balm""]",snacks,5:00 AM to 12:00 PM,FR
+Licorice Lane Market,"[""Pumpkin Spice Hand Soap"",""Lavender Fields Pillow Mist"",""Jasmine Tea Bath Tea"",""Mountain Retreat Bath Salts"",""Rose Petal Bath Bombs""]",snacks,6:00 AM to 8:00 PM,SE
+Cinnamon Spice Store,"[""Peach Paradise Body Oil"",""Cucumber Melon Body Mist"",""Mountain Retreat Bath Salts"",""Sandalwood Shaving Cream"",""Ocean Breeze Body Wash""]",boutique,9:00 AM to 9:00 PM,CN
+Copper Creek Corner Store,"[""Honeysuckle Room Diffuser"",""Vanilla Bean Body Lotion"",""Lavender Fields Pillow Mist"",""Sunset Serenade Lip Balm"",""Peach Paradise Body Oil""]",restaurant,9:00 AM to 9:00 PM,ID
+Copper Creek Corner Store,"[""Enchanted Forest Room Spray"",""Berry Blast Lip Gloss"",""Winter Wonderland Candle"",""Lavender Fields Pillow Mist"",""Mountain Retreat Bath Salts""]",boutique,6:00 AM to 8:00 PM,CN
+Pumpkin Patch Plaza,"[""Lemon Verbena Hand Sanitizer"",""Citrus Splash Body Scrub"",""Cherry Blossom Perfume"",""Sandalwood Shaving Cream"",""Golden Harvest Hand Cream""]",fast food,9:00 AM to 9:00 PM,TG
+Gingerbread General Store,"[""Berry Blast Lip Gloss"",""Jasmine Tea Bath Tea"",""Peach Paradise Body Oil"",""Cozy Cabin Blanket"",""Cherry Blossom Perfume""]",boutique,9:00 AM to 9:00 PM,SV
+Olive Orchard Outlet,"[""Midnight Moonlight Perfume"",""Citrus Splash Body Scrub"",""Cherry Blossom Perfume"",""Lemon Verbena Hand Sanitizer"",""Cotton Candy Lip Scrub""]",clothes,5:00 AM to 12:00 PM,CN
+Cotton Candy Corner Store,"[""Lavender Fields Pillow Mist"",""Vanilla Bean Body Lotion"",""Lemon Verbena Hand Sanitizer"",""Sunset Serenade Lip Balm"",""Ocean Breeze Body Wash""]",snacks,6:00 AM to 8:00 PM,RU
+Coral Cove Corner Store,"[""Sunset Serenade Lip Balm"",""Citrus Splash Body Scrub"",""Rose Petal Bath Bombs"",""Lavender Fields Pillow Mist"",""Midnight Moonlight Perfume""]",snacks,5:00 AM to 12:00 PM,US
+Plum Perfect Store,"[""Enchanted Forest Room Spray"",""Tropical Paradise Candle"",""Cherry Blossom Perfume"",""Jasmine Tea Bath Tea"",""Cozy Cabin Blanket""]",restaurant,6:00 AM to 8:00 PM,AR
+Kumquat Corner Store,"[""Amber Sunset Cologne"",""Sandalwood Shaving Cream"",""Cozy Cabin Blanket"",""Honeysuckle Room Diffuser"",""Rose Petal Bath Bombs""]",clothes,5:00 AM to 12:00 PM,US
+Raspberry Ripple Retail,"[""Peach Paradise Body Oil"",""Tropical Paradise Candle"",""Pumpkin Spice Hand Soap"",""Honeysuckle Room Diffuser"",""Citrus Splash Body Scrub""]",snacks,5:00 AM to 12:00 PM,CO
+Coral Cove Corner Store,"[""Peach Paradise Body Oil"",""Sunset Serenade Lip Balm"",""Mountain Retreat Bath Salts"",""Golden Harvest Hand Cream"",""Enchanted Forest Room Spray""]",fast food,7:00 AM to 11:00 PM,AR
+Starlight Supplies,"[""Lavender Fields Pillow Mist"",""Pumpkin Spice Hand Soap"",""Tropical Paradise Candle"",""Honeysuckle Room Diffuser"",""Sandalwood Shaving Cream""]",snacks,24 hrs,JP
+Desert Oasis Outfitters,"[""Midnight Moonlight Perfume"",""Citrus Splash Body Scrub"",""Cherry Blossom Perfume"",""Berry Blast Lip Gloss"",""Vanilla Bean Body Lotion""]",clothes,7:00 AM to 8:00 PM,ID
+Golden Gate General Store,"[""Amber Sunset Cologne"",""Cotton Candy Lip Scrub"",""Mountain Retreat Bath Salts"",""Cherry Blossom Perfume"",""Sunset Serenade Lip Balm""]",fast food,5:00 AM to 12:00 PM,NO
+Topaz Trading Post,"[""Vanilla Bean Body Lotion"",""Winter Wonderland Candle"",""Midnight Moonlight Perfume"",""Cucumber Melon Body Mist"",""Cozy Cabin Blanket""]",boutique,5:00 AM to 12:00 PM,PH
+Indigo Isle Emporium,"[""Honeysuckle Room Diffuser"",""Sunset Serenade Lip Balm"",""Vanilla Bean Body Lotion"",""Peach Paradise Body Oil"",""Sandalwood Shaving Cream""]",fast food,9:00 AM to 9:00 PM,MU
+Berry Blast Boutique,"[""Golden Harvest Hand Cream"",""Midnight Moonlight Perfume"",""Cozy Cabin Blanket"",""Jasmine Tea Bath Tea"",""Ocean Breeze Body Wash""]",clothes,24 hrs,CN
+Passionfruit Plaza,"[""Lemon Verbena Hand Sanitizer"",""Winter Wonderland Candle"",""Ocean Breeze Body Wash"",""Honeysuckle Room Diffuser"",""Golden Harvest Hand Cream""]",boutique,7:00 AM to 11:00 PM,ID
+Olive Orchard Outlet,"[""Cucumber Melon Body Mist"",""Lemon Verbena Hand Sanitizer"",""Enchanted Forest Room Spray"",""Ocean Breeze Body Wash"",""Rose Petal Bath Bombs""]",boutique,24 hrs,PL
+Marshmallow Mart,"[""Jasmine Tea Bath Tea"",""Cozy Cabin Blanket"",""Cherry Blossom Perfume"",""Citrus Splash Body Scrub"",""Cucumber Melon Body Mist""]",fast food,7:00 AM to 8:00 PM,RU
+Crimson Corner Store,"[""Cozy Cabin Blanket"",""Mint Mojito Body Butter"",""Golden Harvest Hand Cream"",""Sunset Serenade Lip Balm"",""Rose Petal Bath Bombs""]",restaurant,24 hrs,PT
+Peachy Keen Corner Store,"[""Vanilla Bean Body Lotion"",""Enchanted Forest Room Spray"",""Mint Mojito Body Butter"",""Honeysuckle Room Diffuser"",""Berry Blast Lip Gloss""]",fast food,7:00 AM to 8:00 PM,ID
+Bronze Boutique,"[""Amber Sunset Cologne"",""Peach Paradise Body Oil"",""Pumpkin Spice Hand Soap"",""Midnight Moonlight Perfume"",""Mountain Retreat Bath Salts""]",snacks,7:00 AM to 8:00 PM,CN
+Sunshine Mart,"[""Cotton Candy Lip Scrub"",""Mountain Retreat Bath Salts"",""Enchanted Forest Room Spray"",""Berry Blast Lip Gloss"",""Midnight Moonlight Perfume""]",clothes,7:00 AM to 8:00 PM,GN
+Tropical Treasures Trading Post,"[""Winter Wonderland Candle"",""Golden Harvest Hand Cream"",""Cucumber Melon Body Mist"",""Jasmine Tea Bath Tea"",""Mint Mojito Body Butter""]",restaurant,7:00 AM to 11:00 PM,NZ
+Minty Fresh Market,"[""Lavender Fields Pillow Mist"",""Rose Petal Bath Bombs"",""Cherry Blossom Perfume"",""Enchanted Forest Room Spray"",""Tropical Paradise Candle""]",clothes,7:00 AM to 8:00 PM,PT
+Coconut Cove Corner Store,"[""Lavender Fields Pillow Mist"",""Midnight Moonlight Perfume"",""Sunset Serenade Lip Balm"",""Mountain Retreat Bath Salts"",""Pumpkin Spice Hand Soap""]",boutique,6:00 AM to 8:00 PM,SI
+Bilberry Boutique,"[""Amber Sunset Cologne"",""Ocean Breeze Body Wash"",""Cucumber Melon Body Mist"",""Cozy Cabin Blanket"",""Lavender Fields Pillow Mist""]",restaurant,5:00 AM to 12:00 PM,SE
+Emerald Isle Emporium,"[""Lavender Fields Pillow Mist"",""Cucumber Melon Body Mist"",""Pumpkin Spice Hand Soap"",""Cherry Blossom Perfume"",""Golden Harvest Hand Cream""]",boutique,7:00 AM to 11:00 PM,PT
+Ruby Red Retail,"[""Citrus Splash Body Scrub"",""Mountain Retreat Bath Salts"",""Vanilla Bean Body Lotion"",""Tropical Paradise Candle"",""Sandalwood Shaving Cream""]",restaurant,24 hrs,BY
+Cranberry Cove Corner Store,"[""Tropical Paradise Candle"",""Citrus Splash Body Scrub"",""Jasmine Tea Bath Tea"",""Peach Paradise Body Oil"",""Vanilla Bean Body Lotion""]",restaurant,24 hrs,CN
+Huckleberry Haven Shop,"[""Enchanted Forest Room Spray"",""Cozy Cabin Blanket"",""Pumpkin Spice Hand Soap"",""Peach Paradise Body Oil"",""Golden Harvest Hand Cream""]",clothes,5:00 AM to 12:00 PM,CZ
+Violet Valley Variety Store,"[""Lemon Verbena Hand Sanitizer"",""Sandalwood Shaving Cream"",""Cotton Candy Lip Scrub"",""Vanilla Bean Body Lotion"",""Tropical Paradise Candle""]",boutique,5:00 AM to 12:00 PM,JM
+Cherry Blossom Boutique,"[""Honeysuckle Room Diffuser"",""Rose Petal Bath Bombs"",""Golden Harvest Hand Cream"",""Cucumber Melon Body Mist"",""Citrus Splash Body Scrub""]",restaurant,7:00 AM to 11:00 PM,PE
+Currant Corner Store,"[""Mountain Retreat Bath Salts"",""Cucumber Melon Body Mist"",""Sunset Serenade Lip Balm"",""Jasmine Tea Bath Tea"",""Winter Wonderland Candle""]",snacks,7:00 AM to 8:00 PM,AM
+Ivory Tower Trading Co.,"[""Peach Paradise Body Oil"",""Berry Blast Lip Gloss"",""Pumpkin Spice Hand Soap"",""Cotton Candy Lip Scrub"",""Honeysuckle Room Diffuser""]",boutique,6:00 AM to 8:00 PM,CN
+Blueberry Bliss Boutique,"[""Cucumber Melon Body Mist"",""Mint Mojito Body Butter"",""Amber Sunset Cologne"",""Cherry Blossom Perfume"",""Golden Harvest Hand Cream""]",snacks,5:00 AM to 12:00 PM,PY
+Silver Lining Shop,"[""Mint Mojito Body Butter"",""Sandalwood Shaving Cream"",""Peach Paradise Body Oil"",""Lavender Fields Pillow Mist"",""Winter Wonderland Candle""]",restaurant,24 hrs,GR
+Berry Blast Boutique,"[""Cotton Candy Lip Scrub"",""Pumpkin Spice Hand Soap"",""Lavender Fields Pillow Mist"",""Tropical Paradise Candle"",""Ocean Breeze Body Wash""]",clothes,7:00 AM to 11:00 PM,CN
+Mango Madness Market,"[""Cherry Blossom Perfume"",""Vanilla Bean Body Lotion"",""Mint Mojito Body Butter"",""Enchanted Forest Room Spray"",""Winter Wonderland Candle""]",fast food,5:00 AM to 12:00 PM,ID
+Boysenberry Market,"[""Sandalwood Shaving Cream"",""Cotton Candy Lip Scrub"",""Lemon Verbena Hand Sanitizer"",""Honeysuckle Room Diffuser"",""Berry Blast Lip Gloss""]",fast food,7:00 AM to 8:00 PM,EC
+Ruby Red Retail,"[""Cherry Blossom Perfume"",""Citrus Splash Body Scrub"",""Sunset Serenade Lip Balm"",""Golden Harvest Hand Cream"",""Winter Wonderland Candle""]",boutique,6:00 AM to 8:00 PM,UA
+Blackcurrant Corner Store,"[""Amber Sunset Cologne"",""Peach Paradise Body Oil"",""Golden Harvest Hand Cream"",""Winter Wonderland Candle"",""Vanilla Bean Body Lotion""]",restaurant,7:00 AM to 8:00 PM,MU
+Huckleberry Haven Shop,"[""Lemon Verbena Hand Sanitizer"",""Cherry Blossom Perfume"",""Midnight Moonlight Perfume"",""Mountain Retreat Bath Salts"",""Cotton Candy Lip Scrub""]",fast food,6:00 AM to 8:00 PM,ID
+Pearl Plaza,"[""Mint Mojito Body Butter"",""Sunset Serenade Lip Balm"",""Citrus Splash Body Scrub"",""Tropical Paradise Candle"",""Lavender Fields Pillow Mist""]",fast food,5:00 AM to 12:00 PM,ID
+Desert Oasis Outfitters,"[""Mountain Retreat Bath Salts"",""Sandalwood Shaving Cream"",""Pumpkin Spice Hand Soap"",""Rose Petal Bath Bombs"",""Golden Harvest Hand Cream""]",snacks,9:00 AM to 9:00 PM,BA
+Guava Grove General Store,"[""Mint Mojito Body Butter"",""Ocean Breeze Body Wash"",""Lemon Verbena Hand Sanitizer"",""Citrus Splash Body Scrub"",""Sunset Serenade Lip Balm""]",fast food,9:00 AM to 9:00 PM,PH
+Tropical Treasures Trading Post,"[""Mint Mojito Body Butter"",""Rose Petal Bath Bombs"",""Citrus Splash Body Scrub"",""Golden Harvest Hand Cream"",""Berry Blast Lip Gloss""]",snacks,7:00 AM to 8:00 PM,GB
+Juniper Junction Market,"[""Pumpkin Spice Hand Soap"",""Peach Paradise Body Oil"",""Enchanted Forest Room Spray"",""Tropical Paradise Candle"",""Sandalwood Shaving Cream""]",snacks,9:00 AM to 9:00 PM,CN
+Cherry Blossom Boutique,"[""Vanilla Bean Body Lotion"",""Honeysuckle Room Diffuser"",""Sunset Serenade Lip Balm"",""Enchanted Forest Room Spray"",""Mountain Retreat Bath Salts""]",restaurant,24 hrs,PH
+Mulberry Mart,"[""Jasmine Tea Bath Tea"",""Berry Blast Lip Gloss"",""Winter Wonderland Candle"",""Vanilla Bean Body Lotion"",""Peach Paradise Body Oil""]",restaurant,7:00 AM to 8:00 PM,KE
+Lemon Lime Lane Market,"[""Amber Sunset Cologne"",""Cherry Blossom Perfume"",""Ocean Breeze Body Wash"",""Vanilla Bean Body Lotion"",""Cozy Cabin Blanket""]",snacks,24 hrs,GR
+Berry Blast Boutique,"[""Rose Petal Bath Bombs"",""Midnight Moonlight Perfume"",""Honeysuckle Room Diffuser"",""Cotton Candy Lip Scrub"",""Vanilla Bean Body Lotion""]",fast food,6:00 AM to 8:00 PM,PE
+Copper Creek Corner Store,"[""Honeysuckle Room Diffuser"",""Sunset Serenade Lip Balm"",""Golden Harvest Hand Cream"",""Enchanted Forest Room Spray"",""Winter Wonderland Candle""]",restaurant,6:00 AM to 8:00 PM,ID
+Amber Waves Market,"[""Sandalwood Shaving Cream"",""Honeysuckle Room Diffuser"",""Amber Sunset Cologne"",""Tropical Paradise Candle"",""Winter Wonderland Candle""]",clothes,9:00 AM to 9:00 PM,CN
+Desert Oasis Outfitters,"[""Tropical Paradise Candle"",""Peach Paradise Body Oil"",""Golden Harvest Hand Cream"",""Cherry Blossom Perfume"",""Cucumber Melon Body Mist""]",boutique,7:00 AM to 11:00 PM,US
+Crimson Corner Store,"[""Tropical Paradise Candle"",""Cozy Cabin Blanket"",""Berry Blast Lip Gloss"",""Golden Harvest Hand Cream"",""Mountain Retreat Bath Salts""]",boutique,9:00 AM to 9:00 PM,KZ
+Lemon Lime Lane Market,"[""Cherry Blossom Perfume"",""Amber Sunset Cologne"",""Peach Paradise Body Oil"",""Cozy Cabin Blanket"",""Rose Petal Bath Bombs""]",boutique,5:00 AM to 12:00 PM,CO
+Teal Terrace Trading Post,"[""Mint Mojito Body Butter"",""Golden Harvest Hand Cream"",""Pumpkin Spice Hand Soap"",""Jasmine Tea Bath Tea"",""Lemon Verbena Hand Sanitizer""]",snacks,5:00 AM to 12:00 PM,PS
+Licorice Lane Market,"[""Mint Mojito Body Butter"",""Citrus Splash Body Scrub"",""Cozy Cabin Blanket"",""Cherry Blossom Perfume"",""Ocean Breeze Body Wash""]",restaurant,7:00 AM to 11:00 PM,JP
+Mulberry Mart,"[""Cherry Blossom Perfume"",""Vanilla Bean Body Lotion"",""Peach Paradise Body Oil"",""Sunset Serenade Lip Balm"",""Enchanted Forest Room Spray""]",fast food,6:00 AM to 8:00 PM,ID
+Mulberry Mart,"[""Peach Paradise Body Oil"",""Enchanted Forest Room Spray"",""Mountain Retreat Bath Salts"",""Sandalwood Shaving Cream"",""Berry Blast Lip Gloss""]",snacks,6:00 AM to 8:00 PM,CN
+City Lights Corner Store,"[""Sandalwood Shaving Cream"",""Vanilla Bean Body Lotion"",""Honeysuckle Room Diffuser"",""Ocean Breeze Body Wash"",""Lemon Verbena Hand Sanitizer""]",clothes,7:00 AM to 8:00 PM,ID
+Platinum Point Store,"[""Golden Harvest Hand Cream"",""Cucumber Melon Body Mist"",""Lemon Verbena Hand Sanitizer"",""Sandalwood Shaving Cream"",""Cherry Blossom Perfume""]",clothes,9:00 AM to 9:00 PM,SY
+Blueberry Bliss Boutique,"[""Berry Blast Lip Gloss"",""Honeysuckle Room Diffuser"",""Amber Sunset Cologne"",""Jasmine Tea Bath Tea"",""Vanilla Bean Body Lotion""]",restaurant,24 hrs,RU
+Minty Fresh Market,"[""Jasmine Tea Bath Tea"",""Amber Sunset Cologne"",""Cucumber Melon Body Mist"",""Berry Blast Lip Gloss"",""Sunset Serenade Lip Balm""]",boutique,9:00 AM to 9:00 PM,CV
+Platinum Point Store,"[""Honeysuckle Room Diffuser"",""Cucumber Melon Body Mist"",""Tropical Paradise Candle"",""Sandalwood Shaving Cream"",""Cozy Cabin Blanket""]",boutique,6:00 AM to 8:00 PM,CN
+Periwinkle Plaza,"[""Ocean Breeze Body Wash"",""Sunset Serenade Lip Balm"",""Winter Wonderland Candle"",""Lemon Verbena Hand Sanitizer"",""Pumpkin Spice Hand Soap""]",restaurant,7:00 AM to 11:00 PM,CN
+Watermelon Way Store,"[""Vanilla Bean Body Lotion"",""Jasmine Tea Bath Tea"",""Honeysuckle Room Diffuser"",""Berry Blast Lip Gloss"",""Amber Sunset Cologne""]",boutique,5:00 AM to 12:00 PM,RU
+Turquoise Trail Trading Co.,"[""Midnight Moonlight Perfume"",""Sandalwood Shaving Cream"",""Golden Harvest Hand Cream"",""Rose Petal Bath Bombs"",""Berry Blast Lip Gloss""]",clothes,24 hrs,PT
+Sapphire Shores Shop,"[""Sandalwood Shaving Cream"",""Rose Petal Bath Bombs"",""Cherry Blossom Perfume"",""Pumpkin Spice Hand Soap"",""Lavender Fields Pillow Mist""]",restaurant,6:00 AM to 8:00 PM,NO
+Honey Haven Shop,"[""Cherry Blossom Perfume"",""Enchanted Forest Room Spray"",""Pumpkin Spice Hand Soap"",""Tropical Paradise Candle"",""Lemon Verbena Hand Sanitizer""]",clothes,24 hrs,CZ
+Marshmallow Mart,"[""Ocean Breeze Body Wash"",""Peach Paradise Body Oil"",""Golden Harvest Hand Cream"",""Cherry Blossom Perfume"",""Tropical Paradise Candle""]",fast food,24 hrs,PK
+Guava Grove General Store,"[""Tropical Paradise Candle"",""Sunset Serenade Lip Balm"",""Pumpkin Spice Hand Soap"",""Cherry Blossom Perfume"",""Honeysuckle Room Diffuser""]",boutique,7:00 AM to 8:00 PM,BS
+Topaz Trading Post,"[""Berry Blast Lip Gloss"",""Honeysuckle Room Diffuser"",""Pumpkin Spice Hand Soap"",""Mountain Retreat Bath Salts"",""Vanilla Bean Body Lotion""]",clothes,7:00 AM to 8:00 PM,GR
+Huckleberry Haven Shop,"[""Honeysuckle Room Diffuser"",""Mountain Retreat Bath Salts"",""Midnight Moonlight Perfume"",""Vanilla Bean Body Lotion"",""Berry Blast Lip Gloss""]",fast food,7:00 AM to 11:00 PM,CZ
+Strawberry Fields Store,"[""Enchanted Forest Room Spray"",""Honeysuckle Room Diffuser"",""Ocean Breeze Body Wash"",""Rose Petal Bath Bombs"",""Cotton Candy Lip Scrub""]",restaurant,7:00 AM to 8:00 PM,PT
+Gooseberry Goods,"[""Cucumber Melon Body Mist"",""Vanilla Bean Body Lotion"",""Peach Paradise Body Oil"",""Honeysuckle Room Diffuser"",""Midnight Moonlight Perfume""]",clothes,6:00 AM to 8:00 PM,AM
+Pomegranate Point Store,"[""Mint Mojito Body Butter"",""Lemon Verbena Hand Sanitizer"",""Cherry Blossom Perfume"",""Tropical Paradise Candle"",""Enchanted Forest Room Spray""]",clothes,6:00 AM to 8:00 PM,AR
+Pineapple Paradise Plaza,"[""Honeysuckle Room Diffuser"",""Jasmine Tea Bath Tea"",""Midnight Moonlight Perfume"",""Citrus Splash Body Scrub"",""Amber Sunset Cologne""]",clothes,9:00 AM to 9:00 PM,TH
+Guava Grove General Store,"[""Rose Petal Bath Bombs"",""Mountain Retreat Bath Salts"",""Golden Harvest Hand Cream"",""Lavender Fields Pillow Mist"",""Cucumber Melon Body Mist""]",snacks,24 hrs,BD
+Olive Orchard Outlet,"[""Jasmine Tea Bath Tea"",""Vanilla Bean Body Lotion"",""Amber Sunset Cologne"",""Sunset Serenade Lip Balm"",""Mint Mojito Body Butter""]",snacks,7:00 AM to 11:00 PM,ID
+Rosewood Retail,"[""Lavender Fields Pillow Mist"",""Ocean Breeze Body Wash"",""Cotton Candy Lip Scrub"",""Enchanted Forest Room Spray"",""Cozy Cabin Blanket""]",fast food,7:00 AM to 11:00 PM,BR
+Peppermint Place,"[""Amber Sunset Cologne"",""Rose Petal Bath Bombs"",""Golden Harvest Hand Cream"",""Mint Mojito Body Butter"",""Vanilla Bean Body Lotion""]",snacks,7:00 AM to 11:00 PM,ID
+Whispering Pines Store,"[""Amber Sunset Cologne"",""Mountain Retreat Bath Salts"",""Mint Mojito Body Butter"",""Cherry Blossom Perfume"",""Peach Paradise Body Oil""]",clothes,24 hrs,RU
+Coral Cove Corner Store,"[""Sandalwood Shaving Cream"",""Peach Paradise Body Oil"",""Mountain Retreat Bath Salts"",""Cozy Cabin Blanket"",""Tropical Paradise Candle""]",boutique,9:00 AM to 9:00 PM,FR
+Starfruit Store,"[""Rose Petal Bath Bombs"",""Jasmine Tea Bath Tea"",""Cucumber Melon Body Mist"",""Pumpkin Spice Hand Soap"",""Golden Harvest Hand Cream""]",restaurant,7:00 AM to 8:00 PM,CN
+Kiwi Kingdom Shop,"[""Sandalwood Shaving Cream"",""Cozy Cabin Blanket"",""Midnight Moonlight Perfume"",""Vanilla Bean Body Lotion"",""Jasmine Tea Bath Tea""]",boutique,24 hrs,ID
+Juniper Junction Market,"[""Mint Mojito Body Butter"",""Lavender Fields Pillow Mist"",""Pumpkin Spice Hand Soap"",""Midnight Moonlight Perfume"",""Cotton Candy Lip Scrub""]",fast food,24 hrs,TH
+Azure Skies Store,"[""Cotton Candy Lip Scrub"",""Berry Blast Lip Gloss"",""Lavender Fields Pillow Mist"",""Enchanted Forest Room Spray"",""Tropical Paradise Candle""]",snacks,5:00 AM to 12:00 PM,TT
+Elderberry Emporium,"[""Lemon Verbena Hand Sanitizer"",""Cozy Cabin Blanket"",""Golden Harvest Hand Cream"",""Citrus Splash Body Scrub"",""Amber Sunset Cologne""]",fast food,9:00 AM to 9:00 PM,PT
+Sunshine Mart,"[""Rose Petal Bath Bombs"",""Lavender Fields Pillow Mist"",""Jasmine Tea Bath Tea"",""Cherry Blossom Perfume"",""Cotton Candy Lip Scrub""]",boutique,5:00 AM to 12:00 PM,UA
+Cobalt Corner Store,"[""Golden Harvest Hand Cream"",""Peach Paradise Body Oil"",""Honeysuckle Room Diffuser"",""Midnight Moonlight Perfume"",""Tropical Paradise Candle""]",clothes,24 hrs,HN
+Copper Creek Corner Store,"[""Pumpkin Spice Hand Soap"",""Citrus Splash Body Scrub"",""Vanilla Bean Body Lotion"",""Rose Petal Bath Bombs"",""Cucumber Melon Body Mist""]",restaurant,6:00 AM to 8:00 PM,PH
+Coconut Cove Corner Store,"[""Lavender Fields Pillow Mist"",""Cucumber Melon Body Mist"",""Pumpkin Spice Hand Soap"",""Cotton Candy Lip Scrub"",""Lemon Verbena Hand Sanitizer""]",clothes,9:00 AM to 9:00 PM,ID
+Dragonfruit Delights Trading Post,"[""Sunset Serenade Lip Balm"",""Sandalwood Shaving Cream"",""Rose Petal Bath Bombs"",""Berry Blast Lip Gloss"",""Enchanted Forest Room Spray""]",boutique,7:00 AM to 11:00 PM,PH
+Passionfruit Plaza,"[""Cozy Cabin Blanket"",""Berry Blast Lip Gloss"",""Honeysuckle Room Diffuser"",""Tropical Paradise Candle"",""Cotton Candy Lip Scrub""]",boutique,5:00 AM to 12:00 PM,CN
+Boysenberry Market,"[""Mint Mojito Body Butter"",""Jasmine Tea Bath Tea"",""Lavender Fields Pillow Mist"",""Tropical Paradise Candle"",""Cozy Cabin Blanket""]",snacks,7:00 AM to 8:00 PM,AM
