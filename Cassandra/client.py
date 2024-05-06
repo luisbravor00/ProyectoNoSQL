@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import logging
 import os
+import getpass
 import random
 import datetime
 
@@ -28,15 +29,16 @@ def clear_terminal():
 def login():
     print(f"\n\n\033[1;31;40m███████████████████████ LOGIN ███████████████████████\033[0m")
     username = input('\nUsername: ')
-    password = input('Password: ')
+    password = getpass.getpass('Password: ')
     return (True, username) if username=='admin' and password=='123' else (False, username)
 
 def print_menu():
     mm_options = {
         1: "Consult Information",
-        2: "Delete",
-        3: "Delete all data",
-        4: "Exit"
+        2: "Modify Information",
+        3: "Delete Information",
+        4: "Delete General Data",
+        5: "Exit"
     }
     print(f"\n\n\033[1;35;40m███████████████████████ MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
@@ -44,12 +46,38 @@ def print_menu():
 
 def print_consult_menu():
     mm_options = {
-        1: "Consult Patient Information",
-        2: "Consult Patient Appointments",
-        3: "Consult All Doctors",
-        4: "Exit Submenu"
+        1: "View all Hospitals",
+        2: "Get Hospital Information",
+        3: "Get Patient Information",
+        4: "Get Patient Appointments",
+        5: "View All Doctors of a Hospital",
+        6: "View Appointments for a Specific Day",
+        7: "Exit Submenu"
     }
     print(f"\n\n\033[1;32;40m███████████████████████ CONSULT MENU ███████████████████████\033[0m")
+    for key in mm_options.keys():
+        print(f"\033[1;33;40m{key}\033[0m -- {mm_options[key]}")
+
+def print_modify_menu():
+    mm_options = {
+        1: "Change Patient Information",
+        2: "Cancel Appointment",
+        3: "Reschedule Appointment (status & date)",
+        4: "Change Appointment Hour",
+        5: "Exit Submenu"
+    }
+    print(f"\n\n\033[1;32;40m███████████████████████ MODIFY MENU ███████████████████████\033[0m")
+    for key in mm_options.keys():
+        print(f"\033[1;33;40m{key}\033[0m -- {mm_options[key]}")
+
+def print_delete_menu():
+    mm_options = {
+        1: "Delete Appointment",
+        2: "Delete Patient",
+        3: "Delete Doctor",
+        4: "Exit Submenu"
+    }
+    print(f"\n\n\033[1;32;40m███████████████████████ DELETE MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
         print(f"\033[1;33;40m{key}\033[0m -- {mm_options[key]}")
 
@@ -63,6 +91,8 @@ def main():
     session.set_keyspace(KEYSPACE)
     model.create_schema(session)
 
+    clear_terminal()
+
     correct = False
     username = ""
     while (correct is False):
@@ -70,7 +100,6 @@ def main():
         if correct is False:
             print("\nYou don't have rights to enter the app.\nPlease try again.\n")
 
-    # Clearing the terminal
     clear_terminal()
 
     while(True):
@@ -82,26 +111,52 @@ def main():
             option2 = int(input("Enter your choice: "))
             
             if option2 == 1:
+                # Getting all of the hospitals on the database
+                model.get_all_hospitals(session)
+            if option2 == 2:
+                # Getting the specific hospital information
+                hospital_id = input("Enter your hospital ID: ")
+                model.get_hospital_information(session, hospital_id)
+            if option2 == 3:
                 # Getting the patient information to get it from the database
                 last_name = input("Last Name: ")
                 first_name = input("First Name: ")
-                birth_date= input("Date of birth (yyyy-mm-dd): ")
+                birth_date = input("Date of birth (yyyy-mm-dd): ")
                 model.get_patient_information(session, last_name, first_name, birth_date)
-
-            if option2 == 2:
-                pass
-            if option2 == 3:
-                pass
             if option2 == 4:
+                # Getting the patient appointments
+                patient_id = input("Enter the patient ID: ") 
+                model.get_patient_appointments(session, patient_id)
+            if option2 == 5:
+                # Getting all the doctors of a specific hospital
+                hospital_id = input("Enter the hospital ID: ")
+                model.get_doctor_by_hospital(session, hospital_id)        
+            if option2 == 6:
+                # Getting the appointments for the day
+                date = input("Date to search for (yyyy-mm-dd): ")
+                model.get_appointments_for_a_day(session, date)
+                pass
+            if option2 == 7:
                 pass
 
         if option == 2:
-            pass
+            print_modify_menu()
+            option2 = int(input("Enter your choice: "))
+
 
         if option == 3:
-            model.delete_all_information(session)
+            print_delete_menu()
+            option2 = int(input("Enter your choice: "))
 
+        
         if option == 4:
+            print("\n\033[1;31;40mAre you sure you really want to delete all the information from the database?\033[0m")
+            answer = input("Your answer ('y' for yes or anything else for no): ")
+            if answer == 'y':
+                print("Deleting all the information from the database...")
+                model.delete_all_information(session)
+
+        if option == 5:
             exit(0)
 
 if __name__ == '__main__':
