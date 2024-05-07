@@ -9,7 +9,9 @@ def print_menu():
         1: "Load Data",
         2: "Erase Data",
         3: "Select All",
-        4: "Exit"
+        4: "Passengers above age",
+        5: "Passenger using rentals car",
+        6: "Exit"
     }
     for key in mm_options.keys():
         print(key, '--', mm_options[key])
@@ -40,10 +42,14 @@ def main():
             model.load_data(client)
         if option == 2:
             model.drop_all(client)
-            close_client_stub(client_stub)
         if option == 3:
             model.select_all(client)
         if option == 4:
+            model.passengers_above_age(client)
+        if option == 5:
+            model.passengers_using_rental_cars(client)
+        if option == 6:
+            close_client_stub(client_stub)
             exit(0)
 
 

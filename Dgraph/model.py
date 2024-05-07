@@ -48,7 +48,7 @@ def define_schema(client):
     to: string .
     flight_id: string .
     day: int .
-    month: int .
+    month: int @index(int).
     year: int .
 
     type Airport {
@@ -157,10 +157,82 @@ def select_all(client):
     allNodes = json.loads(res.json)
 
     print(f"-----------All data----------")
-    print(f"{allNodes}")
+    print(f"{allNodes}\n")
 
     return 
 
+def passengers_above_age(client):
+    query = """
+        {
+            passengers(func: has(transit)) @filter(ge(age, 21)) {
+                transit
+                reason
+                age
+                ticket {
+                    flight_id
+                    connection
+                    wait
+                    airline
+                    to {
+                        city
+                    }
+                    day
+                    month
+                    year
+                }
+            }
+  
+            count_month(func: type(Ticket)) {
+            month_count: count(uid)
+            }
+        }
+
+    
+    """
+    res = client.txn(read_only=True).query(query)
+    allNodes = json.loads(res.json)
+
+    print(f"-----------All data----------")
+    print(f"{allNodes}\n")
+
+    return 
+
+
+def passengers_using_rental_cars(client):
+    query = """
+        {
+            rental_car_passengers(func: eq(transit, "rentalCar")) {
+                transit
+                reason
+                age
+                stay
+                ticket {
+                    flight_id
+                    connection
+                    wait
+                    airline
+                    to
+                    day
+                    month
+                    year
+                    dest {
+                        airport_code
+                        airport_name
+                        country
+                        city
+                    }
+                }
+            }
+        }
+    
+    """
+    res = client.txn(read_only=True).query(query)
+    allNodes = json.loads(res.json)
+
+    print(f"-----------All data----------")
+    print(f"{allNodes}\n")
+
+    return 
 
 
 def drop_all(client):
