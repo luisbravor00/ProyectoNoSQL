@@ -1,6 +1,9 @@
 import pydgraph
+import json
+import csv
 
 def define_schema(client):
+
     schema = """
     type Passenger {
         transit
@@ -11,23 +14,24 @@ def define_schema(client):
         gender
         ticket
         customer_id
-        aget
+        age
     }
 
-    transit: string .
+    transit: string @index(exact) .
     reason: string .
     checked_bags: int .
+    carry_on: int .
     stay: bool .
     gender: string .
-    ticket: [uid] reverse .
-    customer_id: uid .
+    ticket: [uid] @reverse .
+    customer_id: string .
     age: int .
 
     type Flight {
         connection
         wait
         duration
-        airline @index(exact)
+        airline
         dest
         to
         flight_id
@@ -39,12 +43,12 @@ def define_schema(client):
     connection: bool .
     wait: string .
     duration: string .
-    airline: string .
-    dest: string .
+    airline: string @index(exact) .
+    dest: [uid] @reverse .
     to: string .
-    flight_id: uid .
+    flight_id: string .
     day: int .
-    month int .
+    month: int .
     year: int .
 
     type Airport {
@@ -54,8 +58,8 @@ def define_schema(client):
         city
     }
 
-    airport_code: uid .
-    airport_name: string @index(trigram).
+    airport_code: string @index(exact) .
+    airport_name: string @index(trigram) .
     country: string .
     city: string .
 
@@ -67,6 +71,7 @@ def load_data(client):
     txn = client.txn()
     try:
         data = []
+        csv_filename = 'Data/flightsData.csv'
 
         with open(csv_filename) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
@@ -78,7 +83,7 @@ def load_data(client):
                 ) = row
 
                 passenger_data = {
-                    'dgrapgh.type': 'Passenger',
+                    'dgraph.type': 'Passenger',
                     'transit': transit.strip(),
                     'reason': reason.strip(),
                     'checked_bags': int(checked_bags.strip()),
@@ -90,8 +95,7 @@ def load_data(client):
                             'wait': wait.strip(),
                             'duration': duration.strip(),
                             'airline': airline.strip(),
-                            'dest': dest.strip(),
-                            'to': [
+                            'dest': [
                                 {
                                     'airport_code': airport_code.strip(),
                                     'airport_name': airport_name.strip(),
@@ -99,6 +103,7 @@ def load_data(client):
                                     'city': city.strip()
                                 }
                             ],
+                            'to': to.strip(),
                             'flight_id': flight_id.strip(),
                             'day': int(day.strip()),
                             'month': int(month.strip()),
@@ -111,14 +116,50 @@ def load_data(client):
                 }
                 data.append(passenger_data)
 
-                response = txn.mutate(commit_now=True, set_obj=data)
-                print(f"Response: {response}")
+            response = txn.mutate(commit_now=True, set_obj=data)
+            print(f"Response: {response}")
+            
 
     finally:
         txn.discard()
 
 ###define querys later
 ##hi
+
+def select_all(client):
+    query = """
+        {
+             passengers(func: has(transit)) {
+                transit
+                reason
+                age
+                ticket {
+                    flight_id
+                    connection
+                    wait
+                    airline
+                    to
+                    day
+                    month
+                    year
+                    dest {
+                    airport_code
+                    airport_name
+                    country
+                    city
+                    }
+                }
+            }
+        }
+    """
+
+    res = client.txn(read_only=True).query(query)
+    allNodes = json.loads(res.json)
+
+    print(f"-----------All data----------")
+    print(f"{allNodes}")
+
+    return 
 
 
 
