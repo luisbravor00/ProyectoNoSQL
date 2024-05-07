@@ -63,8 +63,7 @@ def print_modify_menu():
     mm_options = {
         1: "Cancel Appointment",
         2: "Reschedule Appointment (hour & date)",
-        3: "Change Appointment Hour",
-        4: "Exit Modify Menu"
+        3: "Exit Modify Menu"
     }
     print(f"\n\n\033[1;32;40m███████████████████████ MODIFY MENU ███████████████████████\033[0m")
     for key in mm_options.keys():
@@ -159,10 +158,12 @@ def main():
 
             if option2 == 2:
                 # Reschedule the appointment
-                pass
+                appointment_id = input("Enter the appointment ID you want to RESCHEDULE: ")
+                start_hour = input("New appointment hour (HH:MM): ")
+                date = input("New appointment date (yyyy-mm-dd): ")
+                model.reschedule_appointment(session, appointment_id, start_hour, date)
 
             if option2 == 3:
-                # Change the hour of the appointment
                 pass
 
         if option == 3:
