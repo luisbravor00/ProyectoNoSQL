@@ -1,4 +1,4 @@
-airportCode,name,countryCode,store_name
+airportCode,name,country,stores
 OCA,Ocean Reef Club Airport,US,"[""Ruby Red Retail"",""City Lights Corner Store"",""Emerald Isle Emporium"",""Harbor Haven Shop"",""Starlight Supplies"",""Gingerbread General Store"",""Copper Creek Corner Store"",""Blackcurrant Corner Store"",""Watermelon Way Store""]"
 NTA,Natadola Airport,FJ,"[""Banana Bay Market"",""Ivory Tower Trading Co."",""Barberry Boutique"",""Persimmon Place"",""Crimson Corner Store"",""Emerald Isle Emporium"",""Whispering Pines Store"",""Silver Lining Shop"",""Marigold Market""]"
 GWY,Galway Airport,IE,"[""Turquoise Trail Trading Co."",""Moonlight Market"",""Marigold Market"",""Blueberry Bliss Boutique"",""Aronia Alley Trading Post"",""Bilberry Boutique"",""City Lights Corner Store"",""Mulberry Mart"",""Ivory Tower Trading Co.""]"

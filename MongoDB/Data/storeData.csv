@@ -1,4 +1,4 @@
-store_name,products,store_type,opening_hours,country
+storeName,products,storeType,openingHours,country
 Boysenberry Market,"[""Lemon Verbena Hand Sanitizer"",""Rose Petal Bath Bombs"",""Ocean Breeze Body Wash"",""Citrus Splash Body Scrub"",""Sunset Serenade Lip Balm""]",fast food,7:00 AM to 8:00 PM,AR
 Moonlight Market,"[""Tropical Paradise Candle"",""Cozy Cabin Blanket"",""Honeysuckle Room Diffuser"",""Jasmine Tea Bath Tea"",""Ocean Breeze Body Wash""]",snacks,24 hrs,PH
 Boysenberry Market,"[""Pumpkin Spice Hand Soap"",""Winter Wonderland Candle"",""Cotton Candy Lip Scrub"",""Sandalwood Shaving Cream"",""Ocean Breeze Body Wash""]",snacks,7:00 AM to 11:00 PM,US

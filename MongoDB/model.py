@@ -9,7 +9,7 @@ class Store(BaseModel):
     storeType: str = Field(...)
     openingHours: str = Field(...)
     country: str = Field(...)
-    products: list = Field(...)    
+    products: list[str] = Field(...)    
     
     class Config:
         allow_population_by_field_name = True
@@ -30,7 +30,7 @@ class Airport(BaseModel):
     airportCode: str = Field(...)
     name: str = Field(...)
     country: str = Field(...)
-    stores: list[Store] = Field(...)
+    stores: list[str] = Field(...)
 
     class Config:
         allow_population_by_field_name = True
@@ -50,7 +50,7 @@ class Client(BaseModel):
     name: str = Field(...)
     gender: str = Field(...)
     age: int = Field(...)
-    departureAirport: Airport = Field(...)
-    waitTime: int = Field(...)
-    destinyAirport: Airport = Field(...)
+    departureAirport: str = Field(...)
+    destinationAirport: str = Field(...)
     travelReason: str = Field(...)    
+    waitTime: int = Field(...)
