@@ -2,10 +2,12 @@
 from fastapi import APIRouter, Body, Request, Response, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 from typing import List
+import random
 
 from model import Airport, Client, Store
 
 router = APIRouter()
+BASE_URL = "http://localhost:8000/airport"
 
 @router.post("/client", response_description="post client", status_code=status.HTTP_201_CREATED, response_model=Client)
 def create_client(request: Request, client: Client = Body(...)):
@@ -19,6 +21,14 @@ def create_client(request: Request, client: Client = Body(...)):
 @router.post("/airport", response_description="Post Airport", status_code=status.HTTP_201_CREATED, response_model=Airport)
 def create_airport(request: Request, airport: Airport = Body(...)):
     airport = jsonable_encoder(airport)
+    # print(airport["stores"])
+    new_stores = []
+    for store in airport['stores']:
+        #print("suffix->", BASE_URL+suffix)
+        x = get_stores(request, store)
+        num = random.randint(0, len(x)-1)
+        new_stores.append(x[num])
+    airport["stores"] = new_stores        
     new_airport = request.app.database["airport"].insert_one(airport)
     created_airport = request.app.database["airport"].find_one({"_id":new_airport.inserted_id})
     
@@ -35,6 +45,7 @@ def create_airport(request: Request, store: Store = Body(...)):
 @router.get("/store", response_description="Get stores", response_model=List[Store])
 def get_stores(request:Request, storeName:str):
     stores = list(request.app.database["store"].find({"storeName": storeName}))
+    # print(stores)
     return stores
 
 @router.get("/client", response_description="get clients", response_model=List[Client])

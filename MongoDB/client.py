@@ -50,12 +50,16 @@ def count_client(age:int, gender:str, waitTime:int):
         print("Registros encontrados -> ",json_response)
     else:
         print(f"Error: {response}")
+        
+def list_stores(airport:str, store:str):
+    pass
+
 
 def main():
     log.info(f"Welcome store helper. App requests to: {app_url}")
     parser = argparse.ArgumentParser()
     
-    list_of_actions = ["search", "count"]
+    list_of_actions = ["search", "count", "list"]
     
     parser.add_argument("action", choices=list_of_actions,
             help="Action to be user for the books library")
@@ -65,14 +69,26 @@ def main():
                         help="Search by gender", default=None)
     parser.add_argument("-w","--waitTime",
                         help="Search by wait time in airport", default=None)
+    parser.add_argument("-f","--fromDate",
+                        help="Set a date to start the search", default=None)
+    parser.add_argument("-t","--toDate",
+                        help="set a limit date for the search", default=None)
+    parser.add_argument("-ap","--airport",
+                        help="Search a specific airport", default=None)
+    parser.add_argument("-s","--store",
+                        help="Search a store by it's name", default=None)
+    parser.add_argument("-pd","--product",
+                        help="Search a product", default=None)
+    
     
     args = parser.parse_args()
     
     if args.action == "search":
-        search_client(args.age, args.gender, args.waitTime)
+        search_client(args.age, args.gender, args.waitTime, args.fromDate, args.toDate)
     elif args.action == "count":
-        count_client(args.age, args.gender, args.waitTime)
-
+        count_client(args.age, args.gender, args.waitTime, args.fromDate, args.toDate)
+    elif args.action == "list":
+        list_stores(args.airport, args.store)
 
 if __name__ == "__main__":
     main()
