@@ -53,7 +53,8 @@ def get_client(request:Request, age:int = 0, gender:str = "", waitTime: int = 0,
     
     fromDate = datetime.strptime(fromDate, "%Y-%m-%d")
     toDate = datetime.strptime(toDate, "%Y-%m-%d")
-    clients = list(request.app.database["client"].find({"age":{"$gte":age}}))
+    clients = list(request.app.database["client"].find({"age":{"$gte":age},"waitTime":{"$gte":waitTime}, "gender":{"$regex":gender}, 
+                                                        'travelReason':{"$regex":travelReason}, 'flightDate':{"$gte":fromDate}, 'flightDate':{"$lte":toDate}}))
     for client in clients:
         client["_id"] = str(client["_id"])
     return clients

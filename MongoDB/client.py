@@ -51,7 +51,11 @@ def count_client(age:int, gender:str, waitTime:int, travelReason:str, fromDate:s
     params = {
         'age': age,
         'gender': gender,
-        'waitTime':waitTime 
+        'waitTime':waitTime,
+        'travelReason':travelReason, 
+        'fromDate':fromDate, 
+        'toDate':toDate 
+        
     }   
     
     response = requests.get(endpoint, params=params)
