@@ -2,7 +2,7 @@ import argparse
 import logging
 import os
 import requests
-
+from datetime import datetime
 
 log = logging.getLogger()
 log.setLevel('INFO')
@@ -93,9 +93,9 @@ def main():
     parser.add_argument("-tr","--travelReason",
                         help="Search fro travel reason", default=None)
     parser.add_argument("-f","--fromDate",
-                        help="Set a date to start the search", default=None)
+                        help="Set a date to start the search yyy/mm/dd", default=None)
     parser.add_argument("-t","--toDate",
-                        help="set a limit date for the search", default=None)
+                        help="set a limit date for the search yyy/mm/dd", default=None)
     parser.add_argument("-ap","--airport",
                         help="Search a specific airport", default=None)
     parser.add_argument("-s","--store",

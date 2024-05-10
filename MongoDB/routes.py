@@ -49,13 +49,13 @@ def get_stores(request:Request, storeName:str):
     return stores
 
 @router.get("/client", response_description="get clients", response_model=List)
-def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0):
+def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0, travelReason:str='.*', fromDate:str = '2000-01-01T00:00:00Z',toDate:str='2030-01-01T00:00:00Z'):
     clients = list(request.app.database["client"].find({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":gender}))
     
     return clients
 
 @router.get("/countClient", response_description="get clients", response_model=int)
-def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0):
+def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0, travelReason:str='.*', fromDate:str = '2000-01-01T00:00:00Z',toDate:str='2030-01-01T00:00:00Z'):
     clients = request.app.database["client"].count_documents({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":{"$regex":gender}})
     print(clients)
     return clients
