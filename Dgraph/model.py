@@ -197,6 +197,27 @@ def passengers_above_age(client):
 
     return 
 
+def search_flights_with_airline(client, aName):
+    query = """query search_flights_with_airline($s: string) {
+        all(func: eq(airline, $s)){
+            duration
+            airline
+            to
+            dest{
+                    airport_name
+                }
+        }
+    }
+    """
+    variables = {'$s': aName}
+    res = client.txn(read_only=True).query(query, variables=variables)
+    airline = json.loads(res.json)
+
+    print(f"-------Flights with chosen airline-------")
+    print(f"{airline}\n")
+
+    return
+
 
 def search_passengers_with_transit(client, tType):
     query ="""query search_passengers_with_transit($s: string) {

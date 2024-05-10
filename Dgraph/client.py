@@ -13,7 +13,8 @@ def print_menu():
         5: "Passenger using rentals car",
         6: "Search Passengers with different type of transit",
         7: "Airport Recommendation",
-        8: "Exit"
+        8: "Search flights using an airline",
+        9: "Exit"
     }
     for key in mm_options.keys():
         print(key, '--', mm_options[key])
@@ -56,6 +57,9 @@ def main():
         if option == 7:
             model.airportRecommendation(client)
         if option == 8:
+            aName = input("Airline: ")
+            model.search_flights_with_airline(client, aName)
+        if option == 9:
             close_client_stub(client_stub)
             exit(0)
 
