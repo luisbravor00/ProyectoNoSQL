@@ -1,0 +1,70 @@
+transit,reason,checked_bags,carry_on,stay,gender,ticket,customer_id,age,connection,wait(hr),duration,airline,dest,to,flight_id,day,month,year,airport_code,airport_name,country,city
+rentalCar,business,1,1,FALSE,Male,x01,c01,34,TRUE,1:30,3:45,Alaska,GDL,LAX,GK019,5,5,2024,GDL,Miguel Hidalgo y Costilla Airport,MX,Guadalajara
+family,vacation,1,1,TRUE,Male,x02,c02,32,FALSE,1,3,Delta,JFK,IAD,BA789,8,9,2022,JFK,John F. Kennedy International Airport,USA,New York
+rentalCar,business,0,1,FALSE,Male,x03,c03,21,FALSE,2,2,American Airlines,LAX,DCA,AF234,21,6,2023,LAX,Los Angeles international Airport,USA,Los Angeles
+rentalCar,vacation,1,1,FALSE,Male,x04,c04,22,TRUE,3,2,Virgin Atlantic Airways,ORD,SEA,DL567,17,4,2024,ORD,O'Hare Innternational Airport,USA,Chicago
+rentalCar,business,0,0,FALSE,Female,x05,c05,23,FALSE,3:30,2,Southwest Airlines,SFO,SLC,UA890,3,11,2022,SFO,San Francisco International Airport,USA,San Francisco
+rentalCar,vacation,1,0,FALSE,Female,x06,c06,45,TRUE,2:45,2,Delta,MIA,PHX,AA123,9,1,2023,MIA,Miami International Airport,USA,Miama
+family,vacation,1,1,FALSE,Male,x07,c07,34,TRUE,:30,1,Delta,DFW,SJC,SQ456,28,8,2023,DFW,Dallas/Fort Worth International Airport,USA,Dallas/Fort Worth
+personal,home,2,1,TRUE,Female,x08,c08,41,TRUE,2,1,Alaska,DEN,MSP,EK789,14,7,2021,DEN,Denver International Airport,USA,Denver
+personal,home,2,1,TRUE,Male,x09,c09,20,FALSE,2:15,1,Alaska,IAH,PHL,QF234,5,3,2022,IAH,George Bush International Airport,USA,Houston
+personal,home,1,0,TRUE,Female,x10,c10,18,FALSE,1:45,1:30,Virgin Atlantic Airways,ATL,BOS,TK567,19,10,2024,ATL,Atlanta International Airport,USA,Atlanta
+personal,home,2,1,TRUE,Male,x11,c11,19,TRUE,1:30,3:30,Virgin Atlantic Airways,LAS,ORD,VA890,20,2,2024,LAS,McCarran International Airport,USA,Las Vegas
+personal,home,2,1,TRUE,Female,x12,c12,30,TRUE,3,3:25,Southwest Airlines,MSP,ATL,EY123,7,5,2022,MSP,Minneapolis-Saint Paul International Airport,USA,Minneapolis
+personal,home,1,0,TRUE,Male,x13,c13,30,FALSE,3,4,Virgin Atlantic Airways,CLT,SFO,LH456,11,9,2022,CLT,Charlotte Douglas International Airport,USA,Charlotte
+family,vacation,1,0,FALSE,Female,x14,c14,41,FALSE,2,4,Alaska,SEA,LAX,SQ789,25,6,2023,SEA,Seattle International Airport,USA,Seattle
+family,vacation,2,1,FALSE,Female,x15,c15,50,FALSE,2,4,Alaska,DCA,ORD,DL234,30,4,2022,DCA,Washington International Airport,USA,Washington
+family,vacation,2,1,FALSE,Female,x16,c16,50,FALSE,2,5,Delta,IAD,DEN,AA567,1,12,2021,IAD,Washington Dulles International Airport,USA,Washington
+family,vacation,1,1,FALSE,Male,x17,c17,49,FALSE,2,7,Virgin Atlantic Airways,SJC,DFW,BA890,13,7,2023,SJC,San Jose International Airport,USA,San Jose
+family,vacation,1,2,FALSE,Male,x18,c18,30,FALSE,2,7,Virgin Atlantic Airways,PHX,MIA,QF123,24,11,2022,PHX,Phoenix City Harbor International Airport,USA,Phoenix
+rentalCar,business,1,1,FALSE,Female,x19,c19,38,TRUE,1,7,American Airlines,SLC,LAS,TK456,6,9,2021,SLC,Salt Lake City International Airport,USA,Salt Lake City
+rentalCar,business,0,1,FALSE,Male,x20,c20,36,TRUE,1,2,American Airlines,BOS,ATL,VA789,18,3,2024,BOS,Logan International Airport,USA,Boston
+rentalCar,vacation,0,2,FALSE,Female,x21,c21,28,TRUE,1:30,1:30,Delta,PHL,IAH,EK234,29,10,2022,PHL,Philadelphia International Airport,USA,Philadelphia
+rentalCar,business,0,0,FALSE,Female,x22,c22,25,TRUE,1:30,2:45,Alaska,MSP,DCA,SQ567,2,8,2023,MSP,Minneapolis-Saint Paul International Airport,USA,Minneapolis
+family,vacation,1,0,FALSE,Male,x23,c23,25,FALSE,1,2:45,Alaska,DFW,CLT,DL890,15,6,2022,DFW,Dallas/Fort Worth International Airport,USA,Dallas/Fort Worth
+rentalCar,home,1,1,TRUE,Male,x24,c24,26,FALSE,:45,2,Virgin Atlantic Airways,ATL,SJC,AA234,4,1,2021,ATL,Atlanta International Airport,USA,Atlanta
+personal,home,2,1,TRUE,Male,x25,c25,29,FALSE,:45,3,Delta,ORD,IAD,LH567,23,4,2024,ORD,O'Hare Innternational Airport,USA,Chicago
+rentalCar,home,1,1,TRUE,Female,x26,c26,31,FALSE,:45,3,Southwest Airlines,LAX,DCA,BA890,10,12,2022,LAX,Los Angeles international Airport,USA,Los Angeles
+rentalCar,business,0,1,FALSE,Male,x27,c27,33,TRUE,1,4,Virgin Atlantic Airways,SFO,SAN,AF123,8,5,2023,SFO,San Francisco International Airport,USA,San Francisco
+personal,business,1,2,FALSE,Female,x28,c28,43,TRUE,1,5,United Airlines,MIA,SEA,UA456,21,2,2024,MIA,Miami International Airport,USA,Miama
+family,vacation,2,1,FALSE,Female,x29,c29,43,TRUE,1,5:30,United Airlines,DFW,PHX,TK789,17,10,2023,DFW,Dallas/Fort Worth International Airport,USA,Dallas/Fort Worth
+family,home,0,1,TRUE,Female,x30,c30,48,TRUE,2,4:14,Delta,DEN,ORD,VA234,3,7,2021,DEN,Denver International Airport,USA,Denver
+rentalCar,business,2,1,FALSE,Male,x31,c31,52,TRUE,2,4:30,Virgin Atlantic Airways,IAH,DFW,SQ567,9,11,2022,IAH,George Bush International Airport,USA,Boston
+rentalCar,business,1,0,FALSE,Female,x32,c32,51,FALSE,2,3:45,American Airlines,ATL,MSP,DL890,28,9,2023,ATL,Atlanta International Airport,USA,Atlanta
+rentalCar,vacation,0,0,FALSE,Male,x33,c33,57,FALSE,2,2:30,Southwest Airlines,LAS,ATL,EK123,14,8,2021,LAS,McCarran International Airport,USA,Las Vegas
+family,home,1,0,TRUE,Male,x34,c34,57,FALSE,2:25,3:15,Southwest Airlines,MSP,IAH,LH456,5,4,2022,MSP,Minneapolis-Saint Paul International Airport,USA,Minneapolis
+family,vacation,0,1,FALSE,Male,x35,c35,58,FALSE,3,4,Delta,CLT,PHX,BA789,19,12,2024,CLT,Charlotte Douglas International Airport,USA,Charlotte
+family,home,1,0,TRUE,Female,x36,c36,59,TRUE,3:15,5,Alaska,DCA,LAS,AF234,20,2,2024,DCA,Washington International Airport,USA,Washington
+personal,home,1,1,TRUE,Female,x37,c37,60,FALSE,3:30,5:15,Virgin Atlantic Airways,IAD,ATL,UA567,7,6,2022,IAD,Washington Dulles International Airport,USA,Washington
+personal,home,0,1,TRUE,Male,x38,c38,41,TRUE,1,5:10,Alaska,SJC,BNA,TK890,11,10,2023,SJC,San Jose International Airport,USA,San Jose
+personal,home,2,0,TRUE,Male,x39,c39,29,TRUE,:45,4:10,Delta,PHX,SLC,SQ123,25,7,2024,PHX,Phoenix City Harbor International Airport,USA,Phoenix
+personal,home,2,1,TRUE,Female,x40,c40,38,FALSE,1:25,4:20,Delta,SEA,BOS,VA456,30,5,2022,SEA,Seattle International Airport,USA,Seattle
+personal,vacation,1,0,FALSE,Male,x41,c41,39,FALSE,1:30,4:25,Delta,SAN,IAD,DL789,1,1,2021,SAN,San Diego International,USA,San Diego
+personal,home,0,1,TRUE,Male,x42,c42,49,FALSE,2,6,Virgin Atlantic Airways,MSP,PDX,AA234,13,8,2023,MSP,Minneapolis-Saint Paul International Airport,USA,Minneapolis
+personal,vacation,0,1,FALSE,Female,x43,c43,46,FALSE,2,6:10,United Airlines,DFW,IND,QF567,24,12,2022,DFW,Dallas/Fort Worth International Airport,USA,Dallas/Fort Worth
+family,vacation,1,1,FALSE,Male,x44,c44,44,FALSE,1,7,United Airlines,ORD,BWI,EY890,6,10,2021,ORD,O'Hare Innternational Airport,USA,Chicago
+family,home,1,0,TRUE,Female,x45,c45,29,TRUE,4,7:30,Virgin Atlantic Airways,LAX,SLC,LH123,18,4,2024,LAX,Los Angeles international Airport,USA,Los Angeles
+rentalCar,business,0,1,FALSE,Female,x46,c46,26,FALSE,3,12,Virgin Atlantic Airways,IAH,IAH,BA456,29,11,2022,IAH,George Bush International Airport,USA,Houston
+family,vacation,2,0,FALSE,Male,x47,c47,28,TRUE,3,10,Alaska,ATL,IND,TK789,2,9,2023,ATL,Atlanta International Airport,USA,Atlanta
+family,business,2,0,FALSE,Female,x48,c48,27,FALSE,1,9:45,Delta,LAS,BWI,VA234,15,7,2022,LAS,McCarran International Airport,USA,Las Vegas
+rentalCar,home,1,1,TRUE,Female,x49,c49,61,TRUE,:30,2:34,United Airlines,PHX,SEA,SQ567,4,2,2021,PHX,Phoenix City Harbor International Airport,USA,Phoenix
+family,vacation,0,1,FALSE,Female,x50,c50,63,FALSE,:15,3:12,United Airlines,BOS,SFO,EK890,23,5,2024,BOS,Logan International Airport,USA,Boston
+rentalCar,vacation,1,0,FALSE,Female,x51,c51,69,FALSE,:20,3:45,Southwest Airlines,SLC,LAS,QF123,10,1,2023,SLC,Salt Lake City International Airport,USA,Salt Lake City
+family,vacation,0,1,FALSE,Male,x52,c52,23,FALSE,:50,4,Southwest Airlines,BNA,IAH,TK456,8,6,2023,BNA,Nashville International Airport,USA,Nashville
+personal,home,1,1,TRUE,Male,x53,c53,29,FALSE,1,4,Southwest Airlines,IND,DEN,VA789,21,3,2024,IND,Indianapolis International Airport,USA,indianapolis
+personal,business,2,0,FALSE,Male,x54,c54,27,TRUE,1,4,United Airlines,PDX,DFW,SQ234,17,11,2022,PDX,Portland International Airport,USA,Portland
+personal,business,0,1,FALSE,Female,x55,c55,38,FALSE,2,5,Delta,IAD,MSP,DL567,3,8,2021,IAD,Washington Dulles International Airport,USA,Washington
+personal,home,2,0,TRUE,Female,x56,c56,39,TRUE,2,2,Virgin Atlantic Airways,SNA,LAS,AA123,9,12,2022,SNA,John Wayne Airport,USA,Orange County
+family,vacation,1,0,FALSE,Female,x57,c57,28,FALSE,1,6,Alaska,SLC,LAX,BA789,28,10,2023,SLC,Salt Lake City International Airport,USA,Salt Lake City
+rentalCar,vacation,0,1,FALSE,Male,x58,c58,29,TRUE,1,6:45,Delta,BWI,IAH,SQ456,14,9,2021,BWI,Baltimore/Washington International Airport,USA,Baltimore
+rentalCar,home,0,1,TRUE,Male,x59,c59,20,FALSE,3,2:30,Delta,IND,MSP,EK789,5,5,2024,IND,Indianapolis International Airport,USA,indianapolis
+rentalCar,vacation,1,1,FALSE,Male,x60,c60,21,FALSE,1,1:45,Virgin Atlantic Airways,IAH,BOS,LH456,19,1,2023,IAH,George Bush International Airport,USA,Houston
+rentalCar,business,1,0,FALSE,Male,x61,c61,28,FALSE,2,4:12,Alaska,LAS,LAX,TK567,20,7,2023,LAS,McCarran International Airport,USA,Las Vegas
+family,business,0,1,FALSE,Male,x62,c62,48,FALSE,3,3:34,Southwest Airlines,SFO,DEN,VA890,7,4,2022,SFO,San Francisco International Airport,USA,San Francisco
+personal,home,1,0,TRUE,Female,x63,c63,45,FALSE,3,3:30,Southwest Airlines,SEA,LAX,SQ123,11,12,2023,SEA,Seattle International Airport,USA,Seattle
+personal,vacation,2,1,FALSE,Female,x64,c64,64,FALSE,1,4,Virgin Atlantic Airways,DFW,LAX,DL234,25,8,2024,DFW,Dallas/Fort Worth International Airport,USA,Dallas/Fort Worth
+family,vacation,2,0,FALSE,Female,x65,c65,62,FALSE,2,5:41,Delta,DEN,IAH,AA567,30,6,2022,DEN,Denver International Airport,USA,Denver
+rentalCar,business,0,1,FALSE,Male,x66,c66,41,TRUE,2:15,2:39,Delta,IAH,IND,BA890,1,2,2021,IAH,George Bush International Airport,USA,Houston
+personal,home,1,1,TRUE,Male,x67,c67,22,FALSE,1,3,Alaska,ATL,BOS,QF123,13,9,2023,ATL,Atlanta International Airport,USA,Atlanta
+family,vacation,2,0,FALSE,Male,x68,c68,34,TRUE,:40,2,United Airlines,LAS,LAX,TK456,24,1,2024,LAS,McCarran International Airport,USA,Las Vegas
+rentalCar,business,0,1,FALSE,Female,x69,c69,41,FALSE,2,1:50,Virgin Atlantic Airways,MSP,DEN,VA789,6,11,2022,MSP,Minneapolis-Saint Paul International Airport,USA,Minneapolis

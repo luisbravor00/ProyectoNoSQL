@@ -30,7 +30,11 @@ def cql_stmt_generator(hospital=20, patient=100, doctor=100, appointments=10000)
     hospital_stmt = "INSERT INTO hospital (hospital_id, hospital_name, location) VALUES ({}, '{}', '{}');"
     patient_stmt = "INSERT INTO patient (patient_id, first_name, last_name, date_of_birth, address, NSS, hospital_id) VALUES ({}, '{}', '{}', '{}', '{}', '{}', {});"
     doctor_stmt = "INSERT INTO doctor (doctor_id, first_name, last_name, speciality, license_number, hospital_id) VALUES({}, '{}', '{}', '{}', '{}', {});"
+    doctor_by_id_stmt = "INSERT INTO doctor_by_id (doctor_id, first_name, last_name, speciality, license_number, hospital_id) VALUES({}, '{}', '{}', '{}', '{}', {});"
+    doctor_by_hospital_id_stmt = "INSERT INTO doctor_by_hospital_id (doctor_id, first_name, last_name, speciality, license_number, hospital_id) VALUES({}, '{}', '{}', '{}', '{}', {});"
     appointment_stmt = "INSERT INTO appointment (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES({}, {}, {}, '{}', '{}', '{}', '{}', {});"
+    appointment_by_id_stmt = "INSERT INTO appointment_by_id (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES({}, {}, {}, '{}', '{}', '{}', '{}', {});"
+    appointment_by_date_stmt = "INSERT INTO appointment_by_date (appointment_id, doctor_id, patient_id, start_hour, end_hour, date, status, hospital_id) VALUES({}, {}, {}, '{}', '{}', '{}', '{}', {});"
 
     hospital_ids = []
     patients_ids = []
@@ -77,6 +81,10 @@ def cql_stmt_generator(hospital=20, patient=100, doctor=100, appointments=10000)
             # Write the statement with the data created
             fd.write(doctor_stmt.format(doctor_id, doctor_first, doctor_last, speciality, license, hospital_id))
             fd.write('\n')
+            fd.write(doctor_by_id_stmt.format(doctor_id, doctor_first, doctor_last, speciality, license, hospital_id))
+            fd.write('\n')
+            fd.write(doctor_by_hospital_id_stmt.format(doctor_id, doctor_first, doctor_last, speciality, license, hospital_id))
+            fd.write('\n')
         fd.write('\n\n')
 
         # Generate APPOINTMENTS CQL
@@ -95,6 +103,10 @@ def cql_stmt_generator(hospital=20, patient=100, doctor=100, appointments=10000)
             hospital_id = random.choice(hospital_ids)
             # Write the statement with the data created
             fd.write(appointment_stmt.format(app_id, doc_id, pat_id, start_hour, end_hour, date, status, hospital_id))
+            fd.write('\n')
+            fd.write(appointment_by_id_stmt.format(app_id, doc_id, pat_id, start_hour, end_hour, date, status, hospital_id))
+            fd.write('\n')
+            fd.write(appointment_by_date_stmt.format(app_id, doc_id, pat_id, start_hour, end_hour, date, status, hospital_id))
             fd.write('\n')
         fd.write('\n\n')
     fd.close()
