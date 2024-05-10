@@ -15,16 +15,23 @@ app_url = os.getenv("app_url", "http://localhost:8000/airport")
 
 def print_object(answer):
     for ans in answer.keys():
-        print(f"{ans}: {answer[ans]}")
+        if type(answer[ans]) == dict:
+            print_object(answer[ans])
+        else:
+            print(f"{ans}: {answer[ans]}")
     print("="*50)
     
-def search_client(age:int, gender:str, waitTime:int):
+def search_client(age:int, gender:str, waitTime:int, travelReason:str, fromDate:str, toDate:str):
     suffix = "/client"
     endpoint = app_url + suffix
     params = {
         'age': age,
         'gender': gender,
-        'waitTime':waitTime 
+        'waitTime':waitTime,
+        'travelReason':travelReason, 
+        'fromDate':fromDate, 
+        'toDate':toDate 
+        
     }   
     
     response = requests.get(endpoint, params=params)
@@ -51,8 +58,22 @@ def count_client(age:int, gender:str, waitTime:int):
     else:
         print(f"Error: {response}")
         
-def list_stores(airport:str, store:str):
-    pass
+def list_stores(airport:str, store:str, product:str):
+    suffix = '/airport'
+    endpoint = app_url + suffix
+    params = {
+        'airport':airport,
+        'store':store,
+        'product':product
+    }
+    response = requests.get(endpoint, params=params)
+    if response.ok:
+        json_response = response.json()
+        for airport in json_response:        
+            print_object(airport)
+    else:
+        print(f"Error: {response}")
+    
 
 
 def main():
@@ -69,6 +90,8 @@ def main():
                         help="Search by gender", default=None)
     parser.add_argument("-w","--waitTime",
                         help="Search by wait time in airport", default=None)
+    parser.add_argument("-tr","--travelReason",
+                        help="Search fro travel reason", default=None)
     parser.add_argument("-f","--fromDate",
                         help="Set a date to start the search", default=None)
     parser.add_argument("-t","--toDate",
@@ -80,15 +103,14 @@ def main():
     parser.add_argument("-pd","--product",
                         help="Search a product", default=None)
     
-    
     args = parser.parse_args()
     
     if args.action == "search":
-        search_client(args.age, args.gender, args.waitTime, args.fromDate, args.toDate)
+        search_client(args.age, args.gender, args.waitTime, args.travelReason, args.fromDate, args.toDate)
     elif args.action == "count":
-        count_client(args.age, args.gender, args.waitTime, args.fromDate, args.toDate)
+        count_client(args.age, args.gender, args.waitTime, args.travelReason , args.fromDate, args.toDate)
     elif args.action == "list":
-        list_stores(args.airport, args.store)
+        list_stores(args.airport, args.store, args.product)
 
 if __name__ == "__main__":
     main()

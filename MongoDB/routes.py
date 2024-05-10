@@ -48,7 +48,7 @@ def get_stores(request:Request, storeName:str):
     # print(stores)
     return stores
 
-@router.get("/client", response_description="get clients", response_model=List[Client])
+@router.get("/client", response_description="get clients", response_model=List)
 def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0):
     clients = list(request.app.database["client"].find({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":gender}))
     
@@ -59,3 +59,14 @@ def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 
     clients = request.app.database["client"].count_documents({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":{"$regex":gender}})
     print(clients)
     return clients
+
+@router.get("/airport", response_description="airports clients", response_model=List)
+def get_airport(request:Request, airport:str = '.*', store:str = '.*', product:str='.*'):
+    pipeline = [{'$match':{"airportCode":airport}}]
+    if store == '.*':
+        pipeline.append( {'$unwind':'$stores'})
+        
+    
+    airports = list(request.app.database["airport"].aggregate(pipeline))
+    print(airports)
+    return airports
