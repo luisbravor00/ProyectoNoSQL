@@ -2,7 +2,6 @@ import argparse
 import logging
 import os
 import requests
-from datetime import datetime
 
 log = logging.getLogger()
 log.setLevel('INFO')
@@ -13,14 +12,18 @@ log.addHandler(handler)
 # Read env vars related to API connection
 app_url = os.getenv("app_url", "http://localhost:8000/airport")
 
-def print_object(answer):
-    for ans in answer.keys():
-        if type(answer[ans]) == dict:
-            print_object(answer[ans])
+def print_object(obj):
+    for ans in obj.keys():
+        if type(obj[ans]) == dict:
+            print_object(obj[ans])
         else:
-            print(f"{ans}: {answer[ans]}")
+            print(f"{ans}: {obj[ans]}")
     print("="*50)
-    
+
+def print_list(list):
+    for element in list:
+        print(element)   
+        
 def search_client(age:int, gender:str, waitTime:int, travelReason:str, fromDate:str, toDate:str):
     suffix = "/client"
     endpoint = app_url + suffix
@@ -42,7 +45,7 @@ def search_client(age:int, gender:str, waitTime:int, travelReason:str, fromDate:
     else:
         print(f"Error: {response}")
         
-def count_client(age:int, gender:str, waitTime:int):
+def count_client(age:int, gender:str, waitTime:int, travelReason:str, fromDate:str, toDate:str):
     suffix = "/countClient"
     endpoint = app_url + suffix
     params = {
@@ -96,7 +99,7 @@ def main():
                         help="Set a date to start the search yyy/mm/dd", default=None)
     parser.add_argument("-t","--toDate",
                         help="set a limit date for the search yyy/mm/dd", default=None)
-    parser.add_argument("-ap","--airport",
+    parser.add_argument("-p","--airport",
                         help="Search a specific airport", default=None)
     parser.add_argument("-s","--store",
                         help="Search a store by it's name", default=None)

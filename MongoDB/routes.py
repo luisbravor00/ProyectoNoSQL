@@ -4,6 +4,7 @@ from fastapi.encoders import jsonable_encoder
 from typing import List
 import random
 
+from datetime import datetime
 from model import Airport, Client, Store
 
 router = APIRouter()
@@ -45,28 +46,43 @@ def create_airport(request: Request, store: Store = Body(...)):
 @router.get("/store", response_description="Get stores", response_model=List[Store])
 def get_stores(request:Request, storeName:str):
     stores = list(request.app.database["store"].find({"storeName": storeName}))
-    # print(stores)
     return stores
 
 @router.get("/client", response_description="get clients", response_model=List)
-def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0, travelReason:str='.*', fromDate:str = '2000-01-01T00:00:00Z',toDate:str='2030-01-01T00:00:00Z'):
-    clients = list(request.app.database["client"].find({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":gender}))
+def get_client(request:Request, age:int = 0, gender:str = "", waitTime: int = 0, travelReason:str='', fromDate:str = '2000-01-01',toDate:str='2030-01-01'):
     
+    fromDate = datetime.strptime(fromDate, "%Y-%m-%d")
+    toDate = datetime.strptime(toDate, "%Y-%m-%d")
+    clients = list(request.app.database["client"].find({"age":{"$gte":age}}))
+    for client in clients:
+        client["_id"] = str(client["_id"])
     return clients
 
 @router.get("/countClient", response_description="get clients", response_model=int)
-def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0, travelReason:str='.*', fromDate:str = '2000-01-01T00:00:00Z',toDate:str='2030-01-01T00:00:00Z'):
-    clients = request.app.database["client"].count_documents({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":{"$regex":gender}})
-    print(clients)
+def get_client(request:Request, age:int = 0, gender:str = ".*", waitTime: int = 0, travelReason:str='.*', fromDate:str = '2000-01-01', toDate:str='2030-01-01'):
+    
+    fromDate = datetime.strptime(fromDate, "%Y-%m-%d")
+    toDate = datetime.strptime(toDate, "%Y-%m-%d")
+    clients = request.app.database["client"].count_documents({"age":{"$gte":age}, "waitTime":{"$gte":waitTime}, "gender":{"$regex":gender}, 
+                                                        'travelReason':{"$regex":travelReason}, 'flightDate':{"$gte":fromDate}, 'flightDate':{"$lte":toDate}})
+
     return clients
 
 @router.get("/airport", response_description="airports clients", response_model=List)
 def get_airport(request:Request, airport:str = '.*', store:str = '.*', product:str='.*'):
-    pipeline = [{'$match':{"airportCode":airport}}]
-    if store == '.*':
-        pipeline.append( {'$unwind':'$stores'})
-        
+    print(airport)
+    pipeline = [
+        { "$match": { "airportCode": airport } }
+    ]
+    if store != '.*':
+        pipeline.append({'$unwind':'$stores'})
+        pipeline.append({'$match':{"stores.storeName":{"$regex":store}}})
     
+    if product != '.*':
+        pipeline.append({'$unwind':'$stores.products'})
+        pipeline.append({'$match':{"stores.products":{"$regex":product}}})
+        
+    # print(pipeline)
     airports = list(request.app.database["airport"].aggregate(pipeline))
     print(airports)
     return airports
