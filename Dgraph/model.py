@@ -59,7 +59,7 @@ def define_schema(client):
     }
 
     airport_code: string @index(exact) .
-    airport_name: string @index(trigram) .
+    airport_name: string .
     country: string .
     city: string .
 
@@ -318,6 +318,7 @@ def airportRecommendation(client):
         print(f"{airport_name} ({airport_code}) - Month(s): {', '.join(map(str, sorted(months)))}")
 
     return
+
 
     
 
