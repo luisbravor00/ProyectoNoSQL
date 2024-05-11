@@ -11,7 +11,10 @@ def print_menu():
         3: "Select All",
         4: "Passengers above age",
         5: "Passenger using rentals car",
-        6: "Exit"
+        6: "Search Passengers with different type of transit",
+        7: "Airport Recommendation",
+        8: "Search flights using an airline",
+        9: "Exit"
     }
     for key in mm_options.keys():
         print(key, '--', mm_options[key])
@@ -49,6 +52,14 @@ def main():
         if option == 5:
             model.passengers_using_rental_cars(client)
         if option == 6:
+            tType = input("Type of transit: ")
+            model.search_passengers_with_transit(client, tType)
+        if option == 7:
+            model.airportRecommendation(client)
+        if option == 8:
+            aName = input("Airline: ")
+            model.search_flights_with_airline(client, aName)
+        if option == 9:
             close_client_stub(client_stub)
             exit(0)
 

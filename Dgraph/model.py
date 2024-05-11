@@ -197,6 +197,52 @@ def passengers_above_age(client):
 
     return 
 
+def search_flights_with_airline(client, aName):
+    query = """query search_flights_with_airline($s: string) {
+        all(func: eq(airline, $s)){
+            duration
+            airline
+            to
+            dest{
+                    airport_name
+                }
+        }
+    }
+    """
+    variables = {'$s': aName}
+    res = client.txn(read_only=True).query(query, variables=variables)
+    airline = json.loads(res.json)
+
+    print(f"-------Flights with chosen airline-------")
+    print(f"{airline}\n")
+
+    return
+
+
+def search_passengers_with_transit(client, tType):
+    query ="""query search_passengers_with_transit($s: string) {
+        all(func: eq(transit, $s)) {
+            transit
+            reason
+            stay
+            ticket{
+                airline
+                dest{
+                    airport_code
+                    airport_name
+                }
+            }
+        }
+    }
+    """
+
+    variables = {'$s': tType}
+    res = client.txn(read_only=True).query(query, variables=variables)
+    passengers = json.loads(res.json)
+
+    print(f"-------Passengers-------")
+    print(f"{passengers}\n")
+
 
 def passengers_using_rental_cars(client):
     query = """
@@ -233,6 +279,47 @@ def passengers_using_rental_cars(client):
     print(f"{allNodes}\n")
 
     return 
+
+
+def airportRecommendation(client):
+    query = """
+        {
+  airportWithMostTraffic(func: eq(transit, "rentalCar")) {
+    ticket {
+      monthCount as count(month)
+      month
+      dest {
+				airport_name
+      	        airport_code
+        }
+    }
+    most_occurring_month: max(val(monthCount))
+  }
+}
+    
+    """
+    res = client.txn(read_only=True).query(query)
+    data = json.loads(res.json)
+
+    airports = {}
+
+    for airport_data in data['airportWithMostTraffic']:
+        for ticket_info in airport_data['ticket']:
+            month = ticket_info['month']
+            for dest in ticket_info['dest']:
+                airport_name = dest['airport_name']
+                airport_code = dest['airport_code']
+                if airport_code not in airports:
+                    airports[airport_code] = (airport_name, set())
+                airports[airport_code][1].add(month)
+    
+    print("-------Best months for rental car traffic in each airport-------")
+    for airport_code, (airport_name, months) in airports.items():
+        print(f"{airport_name} ({airport_code}) - Month(s): {', '.join(map(str, sorted(months)))}")
+
+    return
+
+    
 
 
 def drop_all(client):
