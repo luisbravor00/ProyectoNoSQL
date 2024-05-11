@@ -2067,3 +2067,13 @@ cassandra.protocol.SyntaxException: <Error from server: code=2000 [Syntax error 
 2024-05-07 14:43:54,065 [INFO] root: Deleting the patient named Bravo Luis born on 2000-12-15
 2024-05-07 14:44:03,616 [INFO] root: Retrieving information of patient Luis Bravo born on 2000-12-15
 2024-05-07 14:44:14,832 [INFO] root: Retrieving appointments for user with ID equal to 06d42ccd-34ea-4faf-ab2d-6fb4f0f27f94
+2024-05-07 16:15:21,334 [INFO] root: Connecting to Cluster
+2024-05-07 16:15:21,350 [WARNING] cassandra.cluster: Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2024-05-07 16:15:21,389 [WARNING] cassandra.cluster: Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-05-07 16:15:22,295 [WARNING] cassandra.cluster: Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-05-07 16:15:23,326 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-05-07 16:15:23,326 [INFO] cassandra.cluster: Cassandra host 127.0.0.1:9042 removed
+2024-05-07 16:15:23,769 [INFO] root: Creating keyspace: hospital with replication factor 1
+2024-05-07 16:15:23,779 [INFO] root: Creating model schema
+2024-05-07 16:25:17,302 [INFO] root: Retrieving information of hospital with id equal to 1b1b22f2-99a4-4f5e-98a7-f08991cdb08b
+2024-05-07 16:25:17,351 [INFO] root: Retrieving all the doctors from the hospital with ID equal to 1b1b22f2-99a4-4f5e-98a7-f08991cdb08b

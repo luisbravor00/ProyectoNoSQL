@@ -121,6 +121,5 @@ def random_date(start_date, end_date):
 def main():
     cql_stmt_generator()
 
-
 if __name__ == "__main__":
     main()

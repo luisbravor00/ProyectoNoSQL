@@ -10,7 +10,7 @@
 
 ## Create random data and save it in a cql file
     python ./tools/populate.py
-    * And verify if the data created correctly *
+    * And verify if the data was created correctly *
 
 ## Copy the data to the container
     docker cp tools/data.cql cassandra_project:/root/data.cql

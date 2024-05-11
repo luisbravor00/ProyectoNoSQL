@@ -215,18 +215,31 @@ SELECT_APPOINTMENT_BY_ID = """
 
 
 # Delete All Information
-DELETE_APPOINTMENT_TABLE = """
-    TRUNCATE hospital.appointment;
-"""
 DELETE_HOSPITAL_TABLE = """
     TRUNCATE hospital.hospital;
-"""
-DELETE_DOCTOR_TABLE = """
-    TRUNCATE hospital.doctor;
 """
 DELETE_PATIENT_TABLE = """
     TRUNCATE hospital.patient;
 """
+DELETE_DOCTOR_TABLE = """
+    TRUNCATE hospital.doctor;
+"""
+DELETE_DOCTOR_TABLE_BY_ID = """
+    TRUNCATE hospital.doctor_by_id;
+"""
+DELETE_DOCTOR_TABLE_BY_HOSPITAL_ID = """
+    TRUNCATE hospital.doctor_by_hospital_id;
+"""
+DELETE_APPOINTMENT_TABLE = """
+    TRUNCATE hospital.appointment;
+"""
+DELETE_APPOINTMENT_TABLE_BY_ID = """
+    TRUNCATE hospital.appointment_by_id;
+"""
+DELETE_APPOINTMENT_TABLE_BY_DATE = """
+    TRUNCATE hospital.appointment_by_date;
+"""
+
 
 def create_keyspace(session, keyspace, replication_factor):
     log.info(f"Creating keyspace: {keyspace} with replication factor {replication_factor}")
@@ -423,8 +436,12 @@ def delete_patient(session, last, first, birth):
 def delete_all_information(session):
     log.info(f"Deleting all the information from every table on the database.")
     session.execute(DELETE_DOCTOR_TABLE)
+    session.execute(DELETE_DOCTOR_TABLE_BY_ID)
+    session.execute(DELETE_DOCTOR_TABLE_BY_HOSPITAL_ID)
     session.execute(DELETE_HOSPITAL_TABLE)
     session.execute(DELETE_PATIENT_TABLE)
     session.execute(DELETE_APPOINTMENT_TABLE)
-    print("\033[1;31;40mAll data has been deleted succesfully!\n\033[0m")
+    session.execute(DELETE_APPOINTMENT_TABLE_BY_ID)
+    session.execute(DELETE_APPOINTMENT_TABLE_BY_DATE)
+    print("\033[1;31;40mAll data has been deleted from the tables succesfully!\n\033[0m")
             
